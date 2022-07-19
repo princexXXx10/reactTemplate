@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Major from '../images/Major.jpg'
+import AnimatedShapes from './AnimatedShapes'
 
 const Container = styled.div`
-    height: calc(100vh - 50px );
+    height: calc(100vh - 60px );
     display: flex;
-    padding: 25vh 20px;
+    padding: 20vh 20px;
 `
 
 const Left = styled.div`
@@ -56,6 +58,10 @@ const Right = styled.div`
     width: 40%;
 `
 
+const Image = styled.img`
+    width: 100%;
+`
+
 const Intro = () => {
   return (
     <Container>
@@ -71,7 +77,8 @@ const Intro = () => {
             </Contact>
         </Info>
         </Left>
-        <Right>r</Right>
+        <Right><Image src={Major} /></Right>
+        <AnimatedShapes />
     </Container>
   )
 }

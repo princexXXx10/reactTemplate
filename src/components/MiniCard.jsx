@@ -1,0 +1,35 @@
+import React from 'react';
+import styled from 'styled-components';
+import Major from '../images/Major.jpg'
+
+const Container = styled.div`
+    width: 160px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+    align-items: center;
+`
+
+const Image = styled.img`
+    width: 20px;
+
+`
+const Text = styled.span`
+    margin-top: 10px;
+    text-align: center;
+`
+
+const MiniCard = () => {
+  return (
+    <Container>
+        <Image src={Major}/>
+        <Text>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </Text>
+    </Container>
+  )
+}
+
+export default MiniCard

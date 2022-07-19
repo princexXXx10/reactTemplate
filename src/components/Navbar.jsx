@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: 50px;
+    height: 60px;
     background-color: black;
 `
 const Wrapper = styled.div`
