@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Major from '../images/Major.jpg'
+import Major from '../images/Major.png'
 import AnimatedShapes from './AnimatedShapes'
 
 const Container = styled.div`

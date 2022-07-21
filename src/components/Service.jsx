@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import Major from '../images/Major.jpg'
+import Woman from '../images/Woman.png';
 import MiniCard from './MiniCard';
 
 const Container = styled.div`
@@ -10,11 +10,23 @@ const Container = styled.div`
 
 const Left = styled.div`
     width: 50%;
+    position: relative;
 `
 
 const Image = styled.img`
+    display: ${(props) => props.open && "none"};
     height: 100%;
     margin-left: 100px;
+`
+
+const Video = styled.video`
+    display: ${(props) => !props.open && "none"};
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 `
 
 const Right = styled.div`
@@ -60,10 +72,12 @@ const Icon = styled.img`
 `
 
 const Service = () => {
+    const [open, setOpen] = useState(false);
   return (
     <Container>
         <Left>
-            <Image src={Major} />
+            <Image open={open} src={Woman} />
+            <Video open={open} autoPlay loop controls src="https://www.youtube.com/watch?v=3j4l7DWseQU&t=67s" />
         </Left>
         <Right>
             <Wrapper>
@@ -76,8 +90,8 @@ const Service = () => {
                     <MiniCard />
                     <MiniCard />
                 </CardContainer>
-                <Button>
-                    <Icon src={Major}/>How Works
+                <Button onClick={() => setOpen(true)}>
+                    <Icon src={Woman}/>How Works
                 </Button>
             </Wrapper>
         </Right>

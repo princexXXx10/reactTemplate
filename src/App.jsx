@@ -1,8 +1,11 @@
 import styled, { css } from "styled-components";
 import Feature from "./components/Feature";
+import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
+import Price from "./components/Price";
 import Service from "./components/Service";
+import Contact from "./Contact";
 
 const Container = styled.div`
     height: 100vh;
@@ -22,19 +25,25 @@ const Shape = css`
 const IntoShape = styled.div`
     ${Shape}
     clip-path: polygon(67% 0%, 100% 0%, 100% 100%, 55% 100%);
-    background-color: crimson;
+    background-color: black;
 `;
 
 const FeatureShape = styled.div`
     ${Shape}
     clip-path: polygon(0% 0%, 55% 0%, 33% 100%, 0% 100%);
-    background-color: pink;
+    background-color: black;
 `;
 
 const ServiceShape = styled.div`
     ${Shape}
     clip-path: polygon(0% 0%, 33% 0%, 33% 100%, 0% 100%);
-    background-color: pink;
+    background-color: black;
+`;
+
+const PriceShape = styled.div`
+    ${Shape}
+    clip-path: polygon(33% 0%, 100% 0%, 100% 100%, 67% 100%);
+    background-color: black;
 `;
 
 const App = () => {
@@ -53,8 +62,15 @@ const App = () => {
       <Service />
       <ServiceShape />
     </Container>
+    <Container>
+      <Price />
+      <PriceShape />
+    </Container>
+    <Container>
+      <Contact />
+      <Footer />
+    </Container>
     </>
-    
 
   );
 };
