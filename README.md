@@ -1,3 +1,21 @@
+A branch of reactTemplate - Anthem; a landing page for a fictional music app. 
+
+RandomDudeOnNet © copyright 2022.
+
+
+HAPPY CODING.
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
