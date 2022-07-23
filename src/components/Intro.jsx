@@ -6,23 +6,49 @@ import AnimatedShapes from './AnimatedShapes'
 const Container = styled.div`
     height: calc(100vh - 60px );
     display: flex;
-    padding: 20vh 20px;
+    padding: 0vh 20px;
+    color: white;
+
+
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+    }
 `
 
 const Left = styled.div`
+    padding-top: 20vh;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+        height: 100%;
+    }
 `
 const Title = styled.h1`
     width: 60%;
     font-size: 60px;
+
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+        font-size: 50px;
+    }
 `
+
+
 const Description = styled.p`
     width: 60%;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20px;
+
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `
 
 const Info = styled.div`
@@ -31,50 +57,51 @@ const Info = styled.div`
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+        flex-direction: column;
+    }
 `
 const Button = styled.button`
     border: none;
-    padding: 15px 25px;
-    font-size: 15px;
-    background-color: crimson;
-    color: white;
-    border-radius: 5px;
-    letter-spacing: 0px;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    letter-spacing: 2px;
     cursor: pointer;
-`
 
-const Contact = styled.div`
-    display: flex;
-    flex-direction: column;
-`
-const Phone = styled.span`
-    color: pink;
-`
-const ContactText = styled.span`
-    color: grey;
+
+    @media only screen and (max-width: 480px){
+        margin-bottom: 300px;
+    }
 `
 
 const Right = styled.div`
     width: 40%;
+    color: black;
+
+
+    @media only screen and (max-width: 480px){
+        display: none;
+    }
 `
 
 const Image = styled.img`
-    width: 100%;
+    margin-left: 2vw;
+    width: 80%;
 `
 
 const Intro = () => {
   return (
     <Container>
-        <Left><Title>Welcome to Krypto networking hub</Title>
-        <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Similique asperiores in impedit voluptas optio dolor quo fuga voluptatum, omnis dolorem, non numquam veniam. 
-        Hic quae ex doloremque similique laboriosam unde?</Description>
+        <Left><Title>A trading platform you'll love</Title>
+        <Description>Buy, Sell and Swap crypto assets easily and effortlessly.
+        Join over 200,000 people in trading today.</Description>
         <Info>
-            <Button>Join Us Now</Button>
-            <Contact>
-                <Phone>Call Us (+234) 23456789 </Phone>
-                <ContactText>For any question or concerns please react us on this number below</ContactText>
-            </Contact>
+            <Button>Get Started</Button>
         </Info>
         </Left>
         <Right><Image src={Major} /></Right>

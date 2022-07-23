@@ -5,7 +5,7 @@ import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Price from "./components/Price";
 import Service from "./components/Service";
-import Contact from "./Contact";
+import Contact from "./components/Contact";
 
 const Container = styled.div`
     height: 100vh;
@@ -24,7 +24,7 @@ const Shape = css`
 
 const IntoShape = styled.div`
     ${Shape}
-    clip-path: polygon(67% 0%, 100% 0%, 100% 100%, 55% 100%);
+    clip-path: polygon(0 0, 60% 0, 60% 100%, 0% 100%);
     background-color: black;
 `;
 
@@ -47,6 +47,9 @@ const PriceShape = styled.div`
 `;
 
 const App = () => {
+
+
+  const smallScreen = window.screen.width <= 480 ? true : false;
   return (
     <>
     <Container>
@@ -60,7 +63,7 @@ const App = () => {
     </Container>
     <Container>
       <Service />
-      <ServiceShape />
+      {!smallScreen && <ServiceShape />}
     </Container>
     <Container>
       <Price />
