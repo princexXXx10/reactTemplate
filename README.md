@@ -1,4 +1,4 @@
-A branch of reactTemplate - Krypto; a landing page for a fictional krypto app.
+A branch of reactTemplate - Krypto; a landing page for a fictional crypto app.
 
 RandomDudeOnNet © copyright 2022.
 
