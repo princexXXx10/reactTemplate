@@ -1,20 +1,8 @@
-A branch of reactTemplate - Anthem; a landing page for a fictional music app. 
+A branch of reactTemplate - Krypto; a landing page for a fictional krypto app.
 
 RandomDudeOnNet © copyright 2022.
 
-
 HAPPY CODING.
-
-
-
-
-
-
-
-
-
-
-
 
 # Getting Started with Create React App
 
