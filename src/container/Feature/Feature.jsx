@@ -6,8 +6,8 @@ import FeatureImages from '../../components/FeatureImages/FeatureImages';
 import './Feature.css';
 
 const Feature = () => (
-  <div className='app__contaainer'>
-    <div className='app__contaainer-wrapper'>
+  <div className='feature__container'>
+    <div className='feature__container-wrapper'>
       <FeatureImages />
     </div>
   </div>

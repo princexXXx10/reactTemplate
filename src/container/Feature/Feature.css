@@ -1,11 +1,11 @@
-.app__contaainer {
-    height: 100vh;
-    background-color: pink;
+.feature__container {
+    background-color: var(--color-black);
 }
 
-.app__contaainer-wrapper {
+.feature__container-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 1000px;
-    margin: auto;
+    padding: 20rem 0;
+    background-color: pink;
 }

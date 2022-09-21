@@ -1,18 +1,16 @@
-.app__container-wrapper {
+.feature-images__container-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1000px;
-    margin: auto;
 }
 
-.app__container-card img {
+.feature-images__container-card img {
     width: 400px;
     height: 200px;
     border-radius: 4px;
 }
 
-.app__container-wrapper p {
+.feature-images__container-card p {
     color: var(--color-white);
     text-align: center;
 }
@@ -22,7 +20,7 @@
 
 
 @media screen and (max-width: 650px) {
-    .app__container-wrapper {
+    .feature-images__container-wrapper {
         flex-direction: column;
     } 
 }
