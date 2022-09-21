@@ -1,0 +1,11 @@
+.app__contaainer {
+    height: 100vh;
+    background-color: pink;
+}
+
+.app__contaainer-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}

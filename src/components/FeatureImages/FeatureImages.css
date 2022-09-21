@@ -1,0 +1,28 @@
+.app__container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.app__container-card img {
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+.app__container-wrapper p {
+    color: var(--color-white);
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .app__container-wrapper {
+        flex-direction: column;
+    } 
+}

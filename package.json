@@ -37,5 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "npm-run": "^5.0.1",
+    "postcss-cli": "^10.0.0",
+    "postcss-nested": "^5.0.6"
   }
 }

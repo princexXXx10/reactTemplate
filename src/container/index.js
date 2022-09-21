@@ -1,4 +1,4 @@
-import AboutUs from './AboutUs/AboutUs';
+import Feature from './Feature/Feature';
 import Chef from './Chef/Chef';
 import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
@@ -9,7 +9,7 @@ import Laurels from './Laurels/Laurels';
 import SpecialMenu from './Menu/SpecialMenu';
 
 export {
-  AboutUs,
+  Feature,
   Chef,
   FindUs,
   Footer,
