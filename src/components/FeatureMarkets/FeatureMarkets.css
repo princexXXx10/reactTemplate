@@ -1,0 +1,18 @@
+.featureMarkets__market {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureMarkets__market-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy__button {
+    padding: 1rem 2rem;
+    color: var(--color-black);
+    border: 2px solid var(--color-black);
+    background-color: var(--color-white);
+    cursor: pointer;
+}
