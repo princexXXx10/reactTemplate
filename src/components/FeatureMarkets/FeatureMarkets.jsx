@@ -14,11 +14,11 @@ const FeatureMarkets = () => {
 
                         <div className='featureMarkets__market-data'>
                             <div className='featureMarkets__market-title'>Coin</div>
-                            <div className='featureMarkets__market-data__coin'><span>BTC</span>Bitcoin</div>
-                            <div className='featureMarkets__market-data__coin'><span>ETH</span>Ethereum</div>
-                            <div className='featureMarkets__market-data__coin'><span>KOI</span>Koin</div>
-                            <div className='featureMarkets__market-data__coin'><span>LTC</span>Litecoin</div>
-                            <div className='featureMarkets__market-data__coin'><span>SOL</span>Solana</div>
+                            <div className='featureMarkets__market-coin'><span>BTC</span>Bitcoin</div>
+                            <div className='featureMarkets__market-coin'><span>ETH</span>Ethereum</div>
+                            <div className='featureMarkets__market-coin'><span>KOI</span>Koin</div>
+                            <div className='featureMarkets__market-coin'><span>LTC</span>Litecoin</div>
+                            <div className='featureMarkets__market-coin'><span>SOL</span>Solana</div>
                         </div>
 
                     </div>

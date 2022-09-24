@@ -1,0 +1,103 @@
+.download__container {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-base);
+}
+
+.download__wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.download__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download__left {
+    width: 50%;
+}
+
+.download__left-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.download__left__image-one,
+.download__left__image-three {
+    width: 300px;
+}
+
+.download__left__image-two {
+    width: 450px;
+    margin: 0 -40%;
+    z-index: 3;
+}
+
+.download__right {
+    width: 45%;
+    color: var(--color-black);
+}
+
+.download__right-text {
+    max-width: 700px;
+    margin: auto;
+}
+
+.download__right-title {
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+.download__right-subtitle {
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.download__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 72%;
+}
+
+.download__button__appStore,
+.download__button__playStore {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: .5rem 1.2rem;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download__button__appStore img,
+.download__button__playStore img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+
+.appStore__right p,
+.playStore__right p {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+
+.appStore__right span,
+.playStore__right span {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+
+
+
+

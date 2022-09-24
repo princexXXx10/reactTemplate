@@ -9,6 +9,13 @@
     flex-direction: column;
 }
 
+.featureMarkets__market-coin,
+.featureMarkets__market-price,
+.featureMarkets__market-change,
+.buy__button {
+    padding-bottom: 3rem;
+}
+
 .buy__button {
     padding: 1rem 2rem;
     color: var(--color-black);
