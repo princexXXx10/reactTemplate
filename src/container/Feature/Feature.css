@@ -1,11 +1,13 @@
 .feature__container {
     background-color: var(--color-white);
     font-family: var(--font-base);
+    color: var(--color-black);
 }
 
-.feature__content {
+.feature__wrapper {
     max-width: 1300px;
     margin: auto;
+    padding: 3rem 0;
 }
 
 .feature__card {
@@ -13,9 +15,4 @@
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
-    background-color: pink;
-}
-
-.feature__market {
-    
 }

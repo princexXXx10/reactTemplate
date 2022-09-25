@@ -8,17 +8,21 @@ const FeatureMarkets = () => {
         <div className='featureMarkets__wrapper'>
             <div className='featureMarkets__content'>
 
+                <div className='featureMarkets__options'>
+                    <h2 className='featureMarkets__hot'>Hot Cryptocurrencies</h2>
+                    <p className='featureMarkets__more'>More Market</p>
+                </div>
 
                 <div className='featureMarkets__market'>
                     <div className='featureMarkets__market-one'>
 
                         <div className='featureMarkets__market-data'>
                             <div className='featureMarkets__market-title'>Coin</div>
-                            <div className='featureMarkets__market-coin'><span>BTC</span>Bitcoin</div>
-                            <div className='featureMarkets__market-coin'><span>ETH</span>Ethereum</div>
-                            <div className='featureMarkets__market-coin'><span>KOI</span>Koin</div>
-                            <div className='featureMarkets__market-coin'><span>LTC</span>Litecoin</div>
-                            <div className='featureMarkets__market-coin'><span>SOL</span>Solana</div>
+                            <div className='featureMarkets__market-coin'><span>BTC</span> Bitcoin</div>
+                            <div className='featureMarkets__market-coin'><span>ETH</span> Ethereum</div>
+                            <div className='featureMarkets__market-coin'><span>KOI</span> Koin</div>
+                            <div className='featureMarkets__market-coin'><span>LTC</span> Litecoin</div>
+                            <div className='featureMarkets__market-coin'><span>SOL</span> Solana</div>
                         </div>
 
                     </div>
@@ -50,11 +54,11 @@ const FeatureMarkets = () => {
 
                         <div className='featureMarkets__market-data'>
                             <div className='featureMarkets__market-title'>Chart</div>
-                            <div>a</div>
-                            <div>a</div>
-                            <div>a</div>
-                            <div>a</div>
-                            <div>a</div>
+                            <div className='chart'>a</div>
+                            <div className='chart'>a</div>
+                            <div className='chart'>a</div>
+                            <div className='chart'>a</div>
+                            <div className='chart'>a</div>
                         </div>
 
                     </div>
@@ -62,11 +66,11 @@ const FeatureMarkets = () => {
 
                         <div className='featureMarkets__market-data'>
                             <div className='featureMarkets__market-title'>Trade</div>
-                            <button type='button' className='buy__button'>Buy</button>
-                            <button type='button' className='buy__button'>Buy</button>
-                            <button type='button' className='buy__button'>Buy</button>
-                            <button type='button' className='buy__button'>Buy</button>
-                            <button type='button' className='buy__button'>Buy</button>
+                            <div className='buy__button'><button>Buy</button></div>
+                            <div className='buy__button'><button>Buy</button></div>
+                            <div className='buy__button'><button>Buy</button></div>
+                            <div className='buy__button'><button>Buy</button></div>
+                            <div className='buy__button'><button>Buy</button></div>
                         </div>
                         
                     </div>

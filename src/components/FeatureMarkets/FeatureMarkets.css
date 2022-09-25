@@ -1,25 +1,49 @@
+.featureMarkets__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5rem;
+}
+.featureMarkets__options h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.featureMarkets__options p {
+    font-size: .9rem;
+}
+
 .featureMarkets__market {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .featureMarkets__market-data {
     display: flex;
     flex-direction: column;
+}
+.featureMarkets__market-title {
+    font-weight: 900;
+    padding: 1rem 0;
 }
 
 .featureMarkets__market-coin,
 .featureMarkets__market-price,
 .featureMarkets__market-change,
-.buy__button {
+.chart {
     padding-bottom: 3rem;
 }
 
+.featureMarkets__market-coin span {
+    font-weight: 900;
+}
+
 .buy__button {
-    padding: 1rem 2rem;
+    padding-bottom: 2.3rem;
+}
+.buy__button button {
+    padding: .3rem 1rem;
     color: var(--color-black);
-    border: 2px solid var(--color-black);
+    /*border: 2px solid var(--color-black);*/
     background-color: var(--color-white);
     cursor: pointer;
 }

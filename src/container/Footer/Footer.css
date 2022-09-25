@@ -22,6 +22,10 @@
     width: 50%;
 }
 
+.footer__left p {
+    width: 90%;
+}
+
 .footer__left-socials {
     display: flex;
     justify-content: space-between;
@@ -37,4 +41,5 @@
 }
 .footer__right li {
     list-style: none;
+    padding: .5rem 0;
 }

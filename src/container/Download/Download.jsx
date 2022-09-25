@@ -10,9 +10,9 @@ const Download = () => (
         
         <div className='download__left'>
           <div className='download__left-images'>
-            <img src={images.welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-one'/>
-            <img src={images.welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-two'/>
-            <img src={images.welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-three'/>
+            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-one'/>
+            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-two'/>
+            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-three'/>
           </div>
         </div>
 

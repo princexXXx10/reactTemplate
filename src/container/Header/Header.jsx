@@ -18,7 +18,7 @@ const Header = () => (
 
         <div className='content__right'>
           <div className='header__img'>
-            <img src={images.welcome} alt="a phone displaying cryptocurrencies - credit Unsplash" />
+            <img src={images.Welcome} alt="a phone displaying cryptocurrencies - credit Unsplash" />
           </div>
         </div>
 

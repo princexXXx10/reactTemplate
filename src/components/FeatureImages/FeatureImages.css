@@ -1,22 +1,22 @@
-.feature-images__container-wrapper{
+.featureImages__content{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.feature-images__container-card {
+.featureImages__card {
     margin: 1.5rem 1rem;
 }
 
-.feature-images__container-card img {
+.featureImages__card img {
     width: 400px;
     height: 200px;
     border-radius: 2rem;
     margin-bottom: 1rem;
 }
 
-.feature-images__container-card p {
-    color: var(--color-white);
+.featureImages__card p {
+    color: var(--color-black);
     text-align: center;
 }
 
@@ -25,12 +25,12 @@
 
 
 @media screen and (max-width: 650px) {
-    .feature-images__container-wrapper {
+    .featureImages__content {
         flex-direction: column;
         width: 100%;
     } 
 
-    .feature-images__container-card img {
+    .featureImages__card img {
         width: 350px;
         height: 180px;
     }
