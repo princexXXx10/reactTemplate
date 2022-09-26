@@ -56,9 +56,33 @@
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1150px) {
     .app__header-h1 {
         line-height: 70px;
         font-size: 70px;
     }
+}
+
+
+@media screen and (max-width: 850px) {
+    .header__content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content__left,
+    .content__right,
+    .header__img img {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    
 }

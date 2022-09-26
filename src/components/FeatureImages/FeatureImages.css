@@ -5,7 +5,7 @@
 }
 
 .featureImages__card {
-    margin: 1.5rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .featureImages__card img {
@@ -21,7 +21,29 @@
 }
 
 
+@media screen and (max-width: 1300px) {
+    .featureImages__card img {
+        width: 350px;
+        height: 180px;
+    }
+}
 
+
+
+@media screen and (max-width: 1150px) {
+    .featureImages__card img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .featureImages__card img {
+        width: 280px;
+        height: 130px;
+    }
+}
 
 
 @media screen and (max-width: 650px) {

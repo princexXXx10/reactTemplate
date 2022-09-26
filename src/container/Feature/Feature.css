@@ -16,3 +16,9 @@
     align-items: center;
     padding: 5rem 0;
 }
+
+.feature__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

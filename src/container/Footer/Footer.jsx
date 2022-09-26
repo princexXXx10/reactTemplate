@@ -24,6 +24,10 @@ const Footer = () => (
           <li>Careers</li>
           <li>Contact Us</li>
           <li>Company News</li>
+          <div className='mobileView'>
+            <h1 className='footer__right-tite'>About</h1>
+            <p>II</p>
+          </div>
         </div>
 
         <div className='footer__right'>
@@ -32,6 +36,10 @@ const Footer = () => (
           <li>Privacy Policy</li>
           <li>Law Enforcement</li>
           <li>Community</li>
+          <div className='mobileView'>
+            <h1 className='footer__right-tite'>About</h1>
+            <p>II</p>
+          </div>
         </div>
 
         <div className='footer__right'>
@@ -40,6 +48,10 @@ const Footer = () => (
           <li>Historical Market Data</li>
           <li>Fee Schedule</li>
           <li>Token Listing</li>
+          <div className='mobileView'>
+            <h1 className='footer__right-tite'>About</h1>
+            <p>II</p>
+          </div>
         </div>
 
         <div className='footer__right'>
@@ -48,6 +60,10 @@ const Footer = () => (
           <li>Announcement</li>
           <li>Connect with Koin</li>
           <li>Success Victor c 2022</li>
+          <div className='mobileView'>
+            <h1 className='footer__right-tite'>About</h1>
+            <p>II</p>
+          </div>
         </div>
 
       </div>

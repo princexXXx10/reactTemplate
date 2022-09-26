@@ -53,7 +53,7 @@ const FeatureMarkets = () => {
                     <div className='featureMarkets__market-one'>
 
                         <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title'>Chart</div>
+                            <div className='featureMarkets__market-title' id='mobileView__title'>Chart</div>
                             <div className='chart'>a</div>
                             <div className='chart'>a</div>
                             <div className='chart'>a</div>
@@ -65,7 +65,7 @@ const FeatureMarkets = () => {
                     <div className='featureMarkets__market-one'>
 
                         <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title'>Trade</div>
+                            <div className='featureMarkets__market-title' id='mobileView__title'>Trade</div>
                             <div className='buy__button'><button>Buy</button></div>
                             <div className='buy__button'><button>Buy</button></div>
                             <div className='buy__button'><button>Buy</button></div>

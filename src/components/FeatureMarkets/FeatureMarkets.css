@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2.5rem;
+    padding: 0 .6rem 2.5rem;
 }
 .featureMarkets__options h2 {
     font-weight: 600;
@@ -46,4 +46,24 @@
     /*border: 2px solid var(--color-black);*/
     background-color: var(--color-white);
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .chart,
+    .buy__button,
+    #mobileView__title {
+        display: none;
+    }
+
+    .featureMarkets__market {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .featureMarkets__options {
+        padding: 0 1rem 2.5rem;
+    }
 }
