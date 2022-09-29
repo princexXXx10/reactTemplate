@@ -7,7 +7,7 @@
 .download__wrapper {
     max-width: 1400px;
     margin: auto;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 .download__content {
@@ -98,10 +98,7 @@
 
 
 
-
-
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1150px) { 
     .download__content {
         flex-direction: column;
     }
@@ -109,6 +106,26 @@
     .download__right {
         width: 100%;
     }
+    .download__buttons {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .download__left__image-one,
+    .download__left__image-three {
+        width: 190px;
+    }
+
+    .download__left__image-two {
+        width: 340px;
+        margin: 0 -40%;
+        z-index: 3;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
 
     .download__left__image-one,
     .download__left__image-three {
@@ -122,6 +139,19 @@
     }
 
     .download__buttons {
-        width: 100%;
+        flex-direction: column;
+    }
+    
+    .download__button__appStore {
+        margin-bottom: 1.5rem;
+    }
+
+    .download__right-title {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .download__right-subtitle {
+        font-size: .9rem;
     }
 }

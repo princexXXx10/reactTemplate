@@ -143,6 +143,15 @@
     .app__navbar-smallscreen {
         display: flex;
     }
+
+    .app__navbar-links-two {
+      display: none;
+    }
+
+    #mobileLogin {
+      padding: 0.6rem 2.1rem;
+      margin-bottom: 2rem;
+    }
 }
 
 
@@ -153,9 +162,5 @@
     
     .app__navbar {
         padding: 1rem;
-    }
-
-    .app__navbar-links-two {
-        display: none;
     }
 }

@@ -25,7 +25,7 @@ const Footer = () => (
           <li>Contact Us</li>
           <li>Company News</li>
           <div className='mobileView'>
-            <h1 className='footer__right-tite'>About</h1>
+            <h1 className='footer__right-mobileTitle'>About</h1>
             <p>II</p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Footer = () => (
           <li>Law Enforcement</li>
           <li>Community</li>
           <div className='mobileView'>
-            <h1 className='footer__right-tite'>About</h1>
+            <h1 className='footer__right-mobileTitle'>Legal</h1>
             <p>II</p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Footer = () => (
           <li>Fee Schedule</li>
           <li>Token Listing</li>
           <div className='mobileView'>
-            <h1 className='footer__right-tite'>About</h1>
+            <h1 className='footer__right-mobileTitle'>Service</h1>
             <p>II</p>
           </div>
         </div>
@@ -61,8 +61,14 @@ const Footer = () => (
           <li>Connect with Koin</li>
           <li>Success Victor c 2022</li>
           <div className='mobileView'>
-            <h1 className='footer__right-tite'>About</h1>
+            <h1 className='footer__right-mobileTitle'>Support</h1>
             <p>II</p>
+          </div>
+          <div className='mobileCommunity'>Community</div>
+          <div className='footer__left-mobileSocials'>
+            <p>icon</p>
+            <p>icon</p>
+            <p>icon</p>
           </div>
         </div>
 

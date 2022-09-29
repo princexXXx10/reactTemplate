@@ -40,6 +40,12 @@ const Navbar = () => {
               <li className='p__opensans'><a href='#contact'>Earn</a></li>
               <li className='p__opensans'><a href='#more'>More</a></li>
             </ul>
+
+            <div className='app__navbar-mobileLinks-two'>
+              <button className='app__navbar-links-two-login' id='mobileLogin'><a href='#login' className=''> Login </a></button>
+              <div />
+              <button className='app__navbar-links-two-signup'><a href='#signup' className=''>Sign Up</a></button>
+            </div>
           </div>
         )}
       </div>

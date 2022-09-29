@@ -37,6 +37,11 @@
     }
 }
 
+@media screen and (max-width: 1150px) {
+    .featureImages__content{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 850px) {
     .featureImages__card img {
@@ -51,6 +56,10 @@
         flex-direction: column;
         width: 100%;
     } 
+
+    .featureImages__card {
+        padding: 1rem 0rem;
+    }
 
     .featureImages__card img {
         width: 350px;

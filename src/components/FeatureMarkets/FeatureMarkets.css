@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 .6rem 2.5rem;
+    padding: 0 1rem 2.5rem;
 }
 .featureMarkets__options h2 {
     font-weight: 600;
@@ -48,9 +48,13 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 1150px) {
+    .featureMarkets__options {
+        padding: 0 .5rem 2.5rem;
+    }
+}
 
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
     .chart,
     .buy__button,
     #mobileView__title {
@@ -64,6 +68,12 @@
     }
 
     .featureMarkets__options {
-        padding: 0 1rem 2.5rem;
+        padding: 0;
+    }
+    .featureMarkets__options h2 {
+        font-size: 1.4rem;
+    }
+    .featureMarkets__options p {
+        font-size: .8rem;
     }
 }
