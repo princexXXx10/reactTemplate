@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SubHeading = () => (
+const Slider = () => (
   <div>
     SubHeading
   </div>
 );
 
-export default SubHeading;
+export default Slider;
