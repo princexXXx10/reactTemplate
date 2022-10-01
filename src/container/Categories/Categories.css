@@ -1,0 +1,17 @@
+.categories__wrapper {
+    max-width: 1600px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.categories__content {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .categories__content {
+        flex-direction: column;
+    }
+}

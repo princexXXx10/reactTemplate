@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
-import { Navbar } from './components';
+import { AboutUs, Chef, FindUs, Footer, Gallery, Categories, Intro, Laurels, SpecialMenu } from './container';
+import { Navbar, Slider } from './components';
 import './App.css';
 
 const App = () => (
   <div>
     <Navbar />
-    <Header />
+    <Slider />
+    <Categories />
     <AboutUs />
     <SpecialMenu />
     <Chef />
