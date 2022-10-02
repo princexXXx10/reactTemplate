@@ -1,0 +1,11 @@
+.product__content {
+    padding: 80px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product__content p{
+    text-align: left;
+    background-color: pink;
+}

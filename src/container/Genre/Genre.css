@@ -1,0 +1,13 @@
+.genreItem__wrapper {
+    max-width: 1600px;
+    margin: auto;
+    background-color: green;
+}
+
+.genreItem__content {
+    padding: 0px 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}

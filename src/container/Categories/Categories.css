@@ -1,13 +1,15 @@
 .categories__wrapper {
     max-width: 1600px;
     margin: auto;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--font-base);
 }
 
 .categories__content {
     display: flex;
-    padding: 20px;
+    padding: 1rem .5rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {

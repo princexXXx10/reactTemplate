@@ -27,6 +27,10 @@
 .navbar__searchContainer input,
 .navbar__searchContainer p {
     padding: 0 .5rem;
+    
+}
+.navbar__searchContainer p {
+    font-family: var(--font-base);
 }
 
 .navbar__logo {
@@ -34,6 +38,7 @@
     font-weight: 600;
     cursor: pointer;
     color: var(--color-white);
+    font-family: var(--font-base);
 }
 
 .navbar__links {
@@ -43,6 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .navbar__links div {
@@ -51,9 +57,11 @@
     background-color: var(--color-primary);
 }
 
-.navbar__links p {
+.navbar__links a {
     color: var(--color-primary);
     padding: 0 .5rem;
+    font-family: var(--font-base);
+    font-size: .9rem;
 }
 
 .navbar__smallScreen {

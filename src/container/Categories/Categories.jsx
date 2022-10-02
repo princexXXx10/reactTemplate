@@ -2,7 +2,7 @@ import React from 'react';
 
 
 import { categories } from "../data";
-import CategoryItem from "./CategoryItem";
+import CategoryItem from "../../components/CategoryItem/CategoryItem";
 import './Categories.css';
 
 const Categories = () => (

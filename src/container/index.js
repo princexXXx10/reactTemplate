@@ -2,10 +2,10 @@ import AboutUs from './AboutUs/AboutUs';
 import Chef from './Chef/Chef';
 import FindUs from './Findus/FindUs';
 import Footer from './Footer/Footer';
-import Gallery from './Gallery/Gallery';
+import Product from './Product/Product';
 import Categories from './Categories/Categories';
 import Intro from './Intro/Intro';
-import Laurels from './Laurels/Laurels';
+import Genre from './Genre/Genre';
 import SpecialMenu from './Menu/SpecialMenu';
 
 export {
@@ -13,9 +13,9 @@ export {
   Chef,
   FindUs,
   Footer,
-  Gallery,
+  Product,
   Categories,
   Intro,
-  Laurels,
+  Genre,
   SpecialMenu,
 };

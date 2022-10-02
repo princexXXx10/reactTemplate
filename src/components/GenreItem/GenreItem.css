@@ -1,0 +1,9 @@
+.genre__title {
+    padding: 8px 38px;
+    font-size: 13px;
+    color: black;
+    background-color: #dfdddd;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+}
