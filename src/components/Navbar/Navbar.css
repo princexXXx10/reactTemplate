@@ -27,7 +27,10 @@
 .navbar__searchContainer input,
 .navbar__searchContainer p {
     padding: 0 .5rem;
-    
+}
+
+.navbar__searchContainer input:focus {
+    outline: none;
 }
 .navbar__searchContainer p {
     font-family: var(--font-base);

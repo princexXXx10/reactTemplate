@@ -1,9 +1,11 @@
 .genre__title {
-    padding: 8px 38px;
-    font-size: 13px;
+    padding: .6rem 2.4rem;
+    font-size: .8rem;
+    font-weight: 400;
     color: black;
     background-color: #dfdddd;
     border-radius: 2rem;
     border: none;
     cursor: pointer;
+    font-family: var(--font-base);
 }

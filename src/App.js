@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AboutUs, Chef, FindUs, Footer, Categories, Intro, Product, SpecialMenu } from './container';
+import { Footer, Categories, Product, Newsletter } from './container';
 import { Navbar, Slider } from './components';
 import './App.css';
 
@@ -10,11 +10,7 @@ const App = () => (
     <Slider />
     <Categories />
     <Product />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <FindUs />
+    <Newsletter />
     <Footer />
   </div>
 );
