@@ -51,6 +51,10 @@
     cursor: pointer;
 }
 
+p,h3,h1 {
+    font-family: var(--font-base);
+}
+
 @media screen and (max-width: 678px) {
     .newsletter__input {
         width: 80%;

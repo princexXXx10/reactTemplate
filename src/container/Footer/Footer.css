@@ -11,6 +11,9 @@
 .footer__content {
     display: flex;
     color: var(--color-white);
+}
+
+p,h3,li,div {
     font-family: var(--font-base);
 }
 
