@@ -38,9 +38,9 @@ const Footer = () => (
 
         <div className='footer__right'>
           <h3 className='footer__right--title'>Contact</h3>
-          <h2 className='footer__right--location'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus asperiores</h2>
-          <h2 className='footer__right--phone'>+234 23456789</h2>
-          <h2 className='footer__right--email'>contact@eclipsegames.gmail.com</h2>
+          <div className='footer__right--location'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus asperiores</div>
+          <div className='footer__right--phone'>+234 23456789</div>
+          <div className='footer__right--email'>contact@eclipsegames.gmail.com</div>
           <img src="https://w7.pngwing.com/pngs/117/675/png-transparent-visa-and-mastercard-ads-mastercard-credit-card-american-express-visa-debit-card-mastercard-text-payment-logo-thumbnail.png" alt="Available payment options" />
         </div>
       </div>

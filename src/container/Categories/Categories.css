@@ -13,8 +13,15 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1150px) {
+    .categories__wrapper {
+        padding: 1rem 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .categories__content {
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 }

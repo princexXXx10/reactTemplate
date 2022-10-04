@@ -6,6 +6,8 @@
 
 .navbar__wrapper{
     padding: 1rem 2rem;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .navbar__content--main {
