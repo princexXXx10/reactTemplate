@@ -1,7 +1,5 @@
 .navbar__container {
-    background-color: var(--color-black);
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    background-color: var(--color-white);
 }
 
 .navbar__wrapper{
@@ -39,10 +37,10 @@
 }
 
 .navbar__logo {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     cursor: pointer;
-    color: var(--color-white);
+    color: var(--color-black);
     font-family: var(--font-base);
 }
 

@@ -6,7 +6,7 @@ const Contact = () => (
   <div className='newsletter__container'>
     <div className='newsletter__wrapper'>
       <div className='newsletter__content'>
-        
+        Contact
       </div>
     </div>
   </div>
