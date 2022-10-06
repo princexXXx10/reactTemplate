@@ -1,0 +1,88 @@
+.aboutUs__wrapper {
+    padding: 3rem 2rem;
+}
+
+.aboutUs__text h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.aboutUs__description {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs__text p {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    padding: 1.2rem 0;
+    font-size: 1.55rem;
+    font-weight: 300;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs__cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8rem 0rem;
+    gap: 2rem;
+}
+
+.aboutUs__cards > * {
+    flex: 1;
+}
+
+.aboutUs__cardItem {
+    border: 2px solid var(--color-black);
+    border-radius: 2.4rem;
+}
+.aboutUs__cardItem img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 430px;
+    height: 180px;
+    object-fit: cover;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.aboutUs__img--box {    
+    border-bottom: 2px var(--color-black) solid;
+}
+.aboutUs__subtitle--content {
+    padding: 1.5rem 1.8rem;
+}
+.aboutUs__subtitle--content h2 {
+    padding-top: .4rem;
+    font-weight: 600;
+}
+.aboutUs__subtitle--content p {
+    padding-top: .5rem;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 786px) {
+    .aboutUs__cards {
+        flex-direction: column;
+    }
+
+    .aboutUs__cardItem img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .aboutUs__text p {
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}

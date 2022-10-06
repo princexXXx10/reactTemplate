@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 //Import Harmburger icons later.
+import { images } from '../../constants'
 
 import './Navbar.css';
 
@@ -9,24 +10,18 @@ const Navbar = () => {
 
   return (
     <div className='navbar__container'>
-      <div className='navbar__wrapper'>
+      <div className='navbar__wrapper custom__wrapper'>
         <div className='navbar__content'>
 
 
           <nav className='navbar__content--main'>
-            <div className='navbar__searchContainer'>
-              <input type="text" />
-              <p>search</p>
-            </div>
-
-            <h1 className='navbar__logo'>Eclipse Games</h1>
+            <img src={images.Logo} alt="" />
 
             <div className='navbar__links'>
-              <p className='navbar__links--register'><a href='#login' > Register </a></p>
-              <div />
-              <p className='navbar__links--signIn'><a href='#signup' >Sign Up</a></p>
-              <div />
-              <p className='navbar__links--cart'><a href='#cart' >Cart</a></p>
+              <p className='navbar__links--home'><a href='#login' > Home </a></p>
+              <p className='navbar__links--product'><a href='#signup' >Products</a></p>
+              <p className='navbar__links--training'><a href='#signup' >Training & Mentorship</a></p>
+              <p className='navbar__links--contact'><a href='#cart' >Contact</a></p>
             </div>
 
 

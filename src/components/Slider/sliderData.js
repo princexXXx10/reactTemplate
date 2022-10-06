@@ -21,11 +21,6 @@ const sliderData = [
         title: "Call of uty: Vanguard",
         description: "Rise on every front and jump back into World War 2 once more, dogfight over the Pacific, airdrop over France, defend Stalingrad with a sniper’s precision and blast through advancing forces in North Africa.",
     },
-    {
-        id: uuidv4(),
-        title: "Call uty: Vanguard",
-        description: "Rise on every front and jump back into World War 2 once more, dogfight over the Pacific, airdrop over France, defend Stalingrad with a sniper’s precision and blast through advancing forces in North Africa.",
-    },
 ];
 
 export default sliderData;

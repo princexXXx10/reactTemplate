@@ -1,11 +1,9 @@
-import AboutUs from './AboutUs/AboutUs';
+import About from './About/About';
 import Footer from './Footer/Footer';
 import Contact from './Contact/Contact';
-import Menu from './Menu/Menu';
 
 export {
-  AboutUs,
+  About,
   Footer,
   Contact,
-  Menu
 };

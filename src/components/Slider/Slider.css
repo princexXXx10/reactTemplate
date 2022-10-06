@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 600px){
   .slider__wrapper {
-    padding: 0 .7rem;
+    padding: 0;
   }
   .container-slider {
     height: 30vh;
