@@ -26,6 +26,19 @@
 .active-anim {
   opacity: 1;
 }
+.slider__text {
+  position: absolute;
+  top: 50%;
+  left: 25vw;
+}
+.slider__text h1 {
+  color: var(--color-white);
+  font-family: var(--font-base);
+  font-weight: 800;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
 .btn-slide {
   width: 5rem;
   height: 5rem;
@@ -90,9 +103,6 @@
   border: none;
   cursor: pointer;
 }
-.slider__text {
-  display: none;
-}
 
 
 @media screen and (max-width: 600px){
@@ -119,5 +129,11 @@
   .dot {
     height: 8px;
     width: 8px;
+  }
+  .slider__text {
+    left: 10%;
+  }
+  .slider__text h1 {
+    font-size: 2rem;
   }
 }

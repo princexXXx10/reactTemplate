@@ -27,7 +27,13 @@
 .navbar__links a {
     color: var(--color-black);
     font-family: var(--font-base);
-    font-size: .9rem;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: ease-in-out;
+}
+
+.navbar__links a:hover { 
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .navbar__smallScreen {

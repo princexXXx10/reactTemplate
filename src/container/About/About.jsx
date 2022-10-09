@@ -12,8 +12,8 @@ const About = () => (
             <h1>About Us</h1>
             <div className='aboutUs__description'>
                 <p>
-                    Omoike Integrated Farm is family-owned and operated, growing high quality chops, produce, 
-                    and pasture-raised meats, located in the mountains of Edo state. 
+                    Omoike Integrated Farm is family-owned and operated farm, growing high quality crops, produce, 
+                    and pasture-raised meat, located in the mountains of Edo state. 
                     We are craftsmen and cultivators of the land, creating a place we call home, and sharing our journey with others.
                 </p>
             </div>

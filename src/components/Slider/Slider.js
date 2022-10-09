@@ -48,17 +48,13 @@ export default function Slider2() {
                       return (
                         <div key={obj.id} className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
                           <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} alt='Right arrow icon'/>
-              
-                          <div className='slider__text'>
-                            <h1 className="game-title">{obj.title}</h1>
-                            <p className="game-description">{obj.description}</p>
-                            <button className="buy-button">Buy Now</button>
-                          </div>
-                      
                         </div>
               
                       )
                     })}
+                    <div className='slider__text'>
+                      <h1>Omoike <br></br>Integrated Farm</h1>
+                    </div>
                     <BtnSlider moveSlide={nextSlide} direction={"next"} />
                     <BtnSlider moveSlide={prevSlide} direction={"prev"} />
               
