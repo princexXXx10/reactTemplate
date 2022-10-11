@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { images } from '../../constants'
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './Contact.css';
 
@@ -9,6 +10,8 @@ const Contact = () => (
     <div className='contact__wrapper custom__wrapper'>
       <div className='contact__content'>
         <h1>Contact Us</h1>
+
+        <AccountCircleIcon />
 
         <div className='contact__content--main'>
           <div className='contact__left'>
