@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import { React, useState } from 'react';
 
-//Import Harmburger icons later.
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 import './Navbar.css';
 
@@ -27,11 +29,11 @@ const Navbar = () => {
       </div>
 
       <div className='app__navbar-smallscreen'>
-        <p color='#e92121' fontSize={27} onClick={() => setToggleMenu(true)}>import hamburger</p>
+        <p onClick={() => setToggleMenu(true)}><MenuIcon className='x'/></p>
         
         {toggleMenu && (
           <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-            <p color='#e92121' fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)}>import close</p>
+            <p className='overlay__close' onClick={() => setToggleMenu(false)}><CloseIcon/></p>
 
             <ul className='app__navbar-smallscreen-links'>
               <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>

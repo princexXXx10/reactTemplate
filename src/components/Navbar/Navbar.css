@@ -41,6 +41,10 @@
   color: var(--color-grey);
 }
 
+.x {
+  color: white;
+}
+
 .app__navbar-links-two {
   display: flex;
   justify-content: flex-end;
