@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-//Import Harmburger icons later.
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import { images } from '../../constants'
 
 import './Navbar.css';
@@ -26,25 +27,20 @@ const Navbar = () => {
 
 
             <div className='navbar__smallScreen'>
-              <p color='#e92121' fontSize={27} onClick={() => setToggleMenu(true)}>import hamburger</p>
+              <p color='#e92121' fontSize={27} onClick={() => setToggleMenu(true)}><MenuIcon/></p>
               
               {toggleMenu && (
                 <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-                  <p color='#e92121' fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)}>import close</p>
-      
-                  <ul className='app__navbar-smallscreen-links'>
-                    <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>
-                    <li className='p__opensans'><a href='#about'>Market</a></li>
-                    <li className='p__opensans'><a href='#menu'>Trade</a></li>
-                    <li className='p__opensans'><a href='#contact'>Earn</a></li>
-                    <li className='p__opensans'><a href='#more'>More</a></li>
-                  </ul>
-      
-                  <div className='app__navbar-mobileLinks-two'>
-                    <button className='app__navbar-links-two-login' id='mobileLogin'><a href='#login' className=''> Login </a></button>
-                    <div />
-                    <button className='app__navbar-links-two-signup'><a href='#signup' className=''>Sign Up</a></button>
+                  <div className='navbar__content--main'>
+                    <img src={images.Logo} alt="" className='overlay__close overlay__closeLogo' />
+                    <p color='#e92121' fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)}><CloseIcon /></p>
                   </div>
+                  <ul className='app__navbar-smallscreen-links'>
+                    <li className=''><a href='#home'>Home</a></li>
+                    <li className=''><a href='#about'>Products</a></li>
+                    <li className=''><a href='#menu'>Training & Mentorship</a></li>
+                    <li className=''><a href='#contact'>Contact</a></li>
+                  </ul>
                 </div>
               )}
             </div>

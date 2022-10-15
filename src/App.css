@@ -3,10 +3,6 @@
     margin: auto;
 }
 
-p,h1,h2,h3,h4,li,ol,ul,a {
-    font-family: var(--font-base);
-}
-
 .custom__button {
     background-color: var(--color-primary);
     color: var(--color-black);
@@ -20,4 +16,8 @@ p,h1,h2,h3,h4,li,ol,ul,a {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+p,h1,h2,h3,h4,li,ol,ul,a {
+    font-family: var(--font-base);
 }

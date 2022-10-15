@@ -48,7 +48,7 @@
 .contact__left--two {
     margin: 70px 0 0;
     height: 600px;
-    background: var(--white-primary);
+    background-color: var(--color-white);
 }
 
 

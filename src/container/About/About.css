@@ -30,9 +30,8 @@
 }
 
 .aboutUs__cards {
-    display: flex;
-    justify-content: space-around;
-    padding: 1.8rem 0rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -66,9 +65,16 @@
     font-weight: 300;
 }
 
+@media screen and (max-width: 1400px) {
+    .aboutUs__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 786px) {
     .aboutUs__cards {
-        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .aboutUs__text h1 {
