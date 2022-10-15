@@ -20,15 +20,19 @@
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
     border-radius: 4rem;
-    padding: .5rem;
+    padding: .3rem;
     display: flex;
+    gap: .7rem;
     justify-content: center;
     align-items: center;
 }
 
-.navbar__searchContainer input,
-.navbar__searchContainer p {
-    padding: 0 .5rem;
+.x {
+    color: var(--color-white);
+}
+
+input {
+    width: 65%;
 }
 
 .navbar__searchContainer input:focus {
@@ -83,7 +87,7 @@
         display: none;
     }
     .navbar__searchContainer {
-
+        border: none;
     }
     .navbar__searchContainer p {
         display: block;

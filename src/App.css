@@ -1,6 +1,6 @@
 .custom__button {
     background-color: var(--color-primary);
-    color: var(--color-black);
+    color: #094b47;
     font-family: var(--font-base);
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -11,4 +11,12 @@
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.custom__button:hover {
+    background-color: #66FCF1;
+}
+
+input {
+    font-family: var(--font-base);
 }

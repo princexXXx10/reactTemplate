@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.product__content p{
+.product__content p {
     text-align: left;
     padding: 3rem 0 2rem;
     font-family: var(--font-base);

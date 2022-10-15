@@ -55,3 +55,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.productItem__textTwo--icons > * {
+    cursor: pointer;
+}
+
+.productItem__textTwo--icons > *:hover {
+    color: var(--color-primary);
+}

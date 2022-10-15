@@ -33,6 +33,10 @@ p,h3,li,div {
     gap: 1rem;
 }
 
+.footer__icons img {
+    cursor: pointer;
+}
+
 .footer__center {
     flex: 1;
     padding: 1.3rem;
@@ -72,6 +76,7 @@ p,h3,li,div {
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .footer__right img {

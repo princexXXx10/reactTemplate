@@ -1,5 +1,8 @@
 import React from 'react'
 
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+
 import './ProductItem.css';
 
 const ProductItem = ({item}) => {
@@ -15,8 +18,8 @@ const ProductItem = ({item}) => {
                         <div className='productItem__textTwo'>
                             <h2 className='productItem__textTwo--price'>{item.price}</h2>
                             <div className='productItem__textTwo--icons'>
-                                <h3>icon</h3>
-                                <h3>icon</h3>
+                                <FavoriteBorderIcon/>
+                                <ShoppingCartOutlinedIcon/>
                             </div>
                         </div>
                         <h2 className='productItem__console'>{item.console}</h2>

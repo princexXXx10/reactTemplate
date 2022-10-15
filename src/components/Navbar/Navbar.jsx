@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-//Import Harmburger icons later.
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import SearchIcon from '@mui/icons-material/Search';
 
 import './Navbar.css';
 
@@ -16,7 +18,7 @@ const Navbar = () => {
           <nav className='navbar__content--main'>
             <div className='navbar__searchContainer'>
               <input type="text" />
-              <p>search</p>
+              <p><SearchIcon/></p>
             </div>
 
             <h1 className='navbar__logo'>Eclipse Games</h1>
@@ -24,18 +26,18 @@ const Navbar = () => {
             <div className='navbar__links'>
               <p className='navbar__links--register'><a href='#login' > Register </a></p>
               <div />
-              <p className='navbar__links--signIn'><a href='#signup' >Sign Up</a></p>
+              <p className='navbar__links--signIn'><a href='#signup' >Sign In</a></p>
               <div />
               <p className='navbar__links--cart'><a href='#cart' >Cart</a></p>
             </div>
 
 
             <div className='navbar__smallScreen'>
-              <p color='#e92121' fontSize={27} onClick={() => setToggleMenu(true)}>import hamburger</p>
+              <p onClick={() => setToggleMenu(true)}><MenuIcon color='#fff' className='x'/></p>
               
               {toggleMenu && (
                 <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-                  <p color='#e92121' fontSize={27} className='overlay__close' onClick={() => setToggleMenu(false)}>import close</p>
+                  <p className='overlay__close' onClick={() => setToggleMenu(false)}><CloseIcon color='#fff'className='x'/></p>
       
                   <ul className='app__navbar-smallscreen-links'>
                     <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>
