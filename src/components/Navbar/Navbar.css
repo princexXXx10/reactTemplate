@@ -34,6 +34,7 @@
   margin: 0 1rem;
   cursor: pointer;
   font-family: var(--font-base);
+  color: var(--color-white);
 }
 
 .app__navbar-links-one li:hover {
