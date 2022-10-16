@@ -54,6 +54,7 @@ export default function Slider2() {
                     })}
                     <div className='slider__text'>
                       <h1>Omoike <br></br>Integrated Farm</h1>
+                      <p>Promoting food sustainability</p>
                     </div>
                     <BtnSlider moveSlide={nextSlide} direction={"next"} />
                     <BtnSlider moveSlide={prevSlide} direction={"prev"} />

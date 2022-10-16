@@ -1,6 +1,7 @@
 .footer__container {
     background-color: var(--color-black);
     color: var(--color-white);
+    margin-top: 3rem;
 }
 
 .footer__wrapper {

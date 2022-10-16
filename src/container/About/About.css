@@ -33,6 +33,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    width: 90%;
+    padding-top: 2rem;
 }
 
 .aboutUs__cardItem {
@@ -44,8 +46,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     display: block;
-    width: 430px;
-    height: 180px;
+    width: 100%;
+    height: 12rem;
     object-fit: cover;
     border-top-right-radius: 2.5rem;
     border-top-left-radius: 2.5rem;
@@ -65,16 +67,22 @@
     font-weight: 300;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1015px) {
     .aboutUs__cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .aboutUs__text p {
+        width: 90%;
+        font-size: 1.3rem;
     }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 600px) {
     .aboutUs__cards {
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
 
     .aboutUs__text h1 {

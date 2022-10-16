@@ -28,16 +28,23 @@
 }
 .slider__text {
   position: absolute;
+  width: 100%;
   top: 50%;
-  left: 25vw;
+  left: 50%;
+  margin-left: -50%;
 }
-.slider__text h1 {
+.slider__text h1, .slider__text p {
   color: var(--color-white);
   font-family: var(--font-base);
+  text-align: center;
+}
+.slider__text h1 {
   font-weight: 800;
   font-size: 5rem;
   text-transform: uppercase;
-  text-align: center;
+}
+.slider__text p {
+  font-size: 1.7rem;
 }
 .btn-slide {
   width: 5rem;
@@ -83,16 +90,7 @@
 .dot.active {
   background: rgb(32, 32, 32);
 }
-.game-title {
-  padding: 10px 0px 10px 15px;
-  font-weight: 900;
-  font-size: 28px;
-  text-align: left;
-}
-.game-description {
-  padding: 8px 10px 6vh 15px;
-  text-align: left;
-}
+
 .buy-button {
   padding: 12px 70px;
   font-size: 18px;
@@ -104,6 +102,11 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1015px){
+  .slider__text h1 {
+    font-size: 4rem;
+  }
+}
 
 @media screen and (max-width: 600px){
   .slider__wrapper {
@@ -129,9 +132,6 @@
   .dot {
     height: 8px;
     width: 8px;
-  }
-  .slider__text {
-    left: 10%;
   }
   .slider__text h1 {
     font-size: 2rem;

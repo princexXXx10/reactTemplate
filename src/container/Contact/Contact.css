@@ -124,8 +124,17 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 @media screen and (max-width: 1024px) {
+    .contact__wrapper {
+        padding: 1rem;
+    }
     .contact__content--main {
         flex-direction: column;
+    }
+    .contact__right {
+        display: none;
+    }
+    .contact__left {
+        width: 100%;
     }
 }
 
@@ -145,8 +154,7 @@ textarea::-webkit-scrollbar-thumb {
         padding: 0rem;
         width: 100%;
     }
-    .contact__left--two
-    {
+    .contact__left--two{
         width: 100%;
     }
     form {

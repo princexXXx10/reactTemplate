@@ -87,6 +87,10 @@
     text-align: center;
 }
 
+.x {
+    color: var(--color-black);
+}
+
 @media screen and (max-width: 1150px){
     .navbar__smallScreen {
         display: block;
