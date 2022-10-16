@@ -1,5 +1,7 @@
 import React from 'react';
 
+import FacebookIcon from '@mui/icons-material/Facebook';
+
 import './Footer.css';
 
 const Footer = () => (
@@ -8,7 +10,7 @@ const Footer = () => (
       <div className='footer__content'>
 
         <div className='footer__left'>
-          <h1 className='footer__left-title'>Koin</h1>
+          <h1 className='footer__left-title'>Koiyn</h1>
           <p className='footer__left-description'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit.
           </p>
@@ -59,7 +61,7 @@ const Footer = () => (
           <li>Support Center</li>
           <li>Announcement</li>
           <li>Connect with Koin</li>
-          <li>Success Victor c 2022</li>
+          <li>Success Victor © 2022</li>
           <div className='mobileView'>
             <h1 className='footer__right-mobileTitle'>Support</h1>
             <p>II</p>

@@ -11,7 +11,7 @@ const Header = () => (
         <div className='content__left'>
           <div className='header__info'>
             <h1 className='header__info-h1'>A trading platform you will Love</h1>
-            <p className='header__info-subtitle'>Buy, Sell and Swap crypto assets easily and effortlessly. Join over 200,000 people in trading today.</p>
+            <p className='header__info-subtitle'>Buy, Sell and Swap crypto assets easily and effortlessly. Join over 2,000,000 people in trading today.</p>
             <button type='button' className='header__button'>Get Started</button>
           </div>
         </div>

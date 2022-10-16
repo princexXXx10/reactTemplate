@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
-        <h1><a href='#home'>Koin</a></h1>
+        <h1><a href='#home'>Koiyn</a></h1>
       </div>
       <ul className='app__navbar-links-one'>
         <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>
