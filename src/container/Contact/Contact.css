@@ -70,6 +70,10 @@ label {
     font-weight: 800;
 }
 
+.contact__left--two b {
+    font-family: var(--font-base);
+}
+
 input, textarea {
     width: 100%;
     padding: .8rem;
@@ -77,6 +81,7 @@ input, textarea {
     outline: none;
     resize: none;
     border: 2px solid var(--color-black);
+    font-family: var(--font-base);
 }
 
 textarea::-webkit-scrollbar {
