@@ -1,7 +1,14 @@
-.featureImages__content{
+.featureImages__content--main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+}
+
+.featureImages__content h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2.5rem;
 }
 
 .featureImages__card {
@@ -20,8 +27,11 @@
 }
 
 @media screen and (max-width: 1015px) {
-    .featureImages__content{
+    .featureImages__content--main{
         gap: 1rem;
+    }
+    .featureImages__content h2 {
+        width: 100%;
     }
     .featureImages__card img {
         height: 10rem;
@@ -29,8 +39,12 @@
 }
 
 @media screen and (max-width: 650px) {
-    .featureImages__content{
+    .featureImages__content--main{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .featureImages__content h2 {
+        width: 100%;
+        font-size: 1.5rem;
     }
     .featureImages__card img {
         height: 11.5rem;

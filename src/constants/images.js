@@ -1,4 +1,4 @@
-import Welcome from '../assets/Welcome.png';
+import Phone from '../assets/Phone.png';
 import Buy from '../assets/Buy.jpg';
 import NFT from '../assets/NFT.jpg';
 import Trade from '../assets/Trade.jpg';
@@ -11,5 +11,5 @@ export default {
   NFT,
   Playstore,
   Appstore,
-  Welcome,
+  Phone,
 };

@@ -10,16 +10,16 @@ const Download = () => (
         
         <div className='download__left'>
           <div className='download__left-images'>
-            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-one'/>
-            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-two'/>
-            <img src={images.Welcome} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-three'/>
+            <img src={images.Phone} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-one'/>
+            <img src={images.Phone} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-two'/>
+            <img src={images.Phone} alt="A phone displaying cryptocurrencies - credit Unsplash" className='download__left__image-three'/>
           </div>
         </div>
 
         <div className='download__right'>
           <div className='download__right-text'>
             <h2 className='download__right-title'>Trade on the go. Anytime, Anyhow, Anywhere.</h2>
-            <p className='download__right-subtitle'>The Koin app and website allow you to start crypto trading with ease</p>
+            <p className='download__right-subtitle'>The Koiyn app and website allows you to start crypto trading with ease</p>
   
             <div className='download__buttons'>
               <div className='download__button__appStore'>

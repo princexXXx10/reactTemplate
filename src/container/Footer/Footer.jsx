@@ -1,6 +1,13 @@
 import React from 'react';
 
 import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+
 
 import './Footer.css';
 
@@ -15,9 +22,11 @@ const Footer = () => (
             Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit.
           </p>
           <div className='footer__left-socials'>
-            <p>icon</p>
-            <p>icon</p>
-            <p>icon</p>
+            <FacebookIcon className='x'/>
+            <InstagramIcon className='x'/>
+            <TwitterIcon className='x'/>
+            <TelegramIcon className='x'/>
+            <YouTubeIcon className='x'/>
           </div>
         </div>
         <div className='footer__right'>
@@ -28,7 +37,7 @@ const Footer = () => (
           <li>Company News</li>
           <div className='mobileView'>
             <h1 className='footer__right-mobileTitle'>About</h1>
-            <p>II</p>
+            <ExpandMoreIcon className='x'/>
           </div>
         </div>
 
@@ -40,7 +49,7 @@ const Footer = () => (
           <li>Community</li>
           <div className='mobileView'>
             <h1 className='footer__right-mobileTitle'>Legal</h1>
-            <p>II</p>
+            <ExpandMoreIcon className='x'/>
           </div>
         </div>
 
@@ -52,7 +61,7 @@ const Footer = () => (
           <li>Token Listing</li>
           <div className='mobileView'>
             <h1 className='footer__right-mobileTitle'>Service</h1>
-            <p>II</p>
+            <ExpandMoreIcon className='x'/>
           </div>
         </div>
 
@@ -64,13 +73,15 @@ const Footer = () => (
           <li>Success Victor © 2022</li>
           <div className='mobileView'>
             <h1 className='footer__right-mobileTitle'>Support</h1>
-            <p>II</p>
+            <ExpandMoreIcon className='x'/>
           </div>
           <div className='mobileCommunity'>Community</div>
           <div className='footer__left-mobileSocials'>
-            <p>icon</p>
-            <p>icon</p>
-            <p>icon</p>
+            <FacebookIcon className='x'/>
+            <InstagramIcon className='x'/>
+            <TwitterIcon className='x'/>
+            <TelegramIcon className='x'/>
+            <YouTubeIcon className='x'/>
           </div>
         </div>
 
