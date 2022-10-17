@@ -112,6 +112,12 @@
   .slider__wrapper {
     padding: 0;
   }
+  .slider__text {
+    top: 40%;
+  }
+  .slider__text p {
+    font-size: 1rem;
+  }
   .container-slider {
     height: 30vh;
   }
