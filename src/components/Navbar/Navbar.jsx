@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import './Navbar.css';
 
@@ -17,7 +19,7 @@ const Navbar = () => {
 
           <nav className='navbar__content--main'>
             <div className='navbar__searchContainer'>
-              <input type="text" />
+              <input placeholder="Search"/>
               <p><SearchIcon/></p>
             </div>
 
@@ -28,29 +30,41 @@ const Navbar = () => {
               <div />
               <p className='navbar__links--signIn'><a href='#signup' >Sign In</a></p>
               <div />
-              <p className='navbar__links--cart'><a href='#cart' >Cart</a></p>
+              <a href="#cart"><ShoppingCartOutlinedIcon className='x'/></a>
             </div>
 
 
             <div className='navbar__smallScreen'>
-              <p onClick={() => setToggleMenu(true)}><MenuIcon color='#fff' className='x'/></p>
+              <div className='navbar__x'>
+                <a href="#cart"><ShoppingCartOutlinedIcon className='y'/></a>
+                <p onClick={() => setToggleMenu(true)}><MenuIcon color='#fff' className='x'/></p>
+              </div>
               
               {toggleMenu && (
                 <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-                  <p className='overlay__close' onClick={() => setToggleMenu(false)}><CloseIcon color='#fff'className='x'/></p>
+                  <div className='app__navbar-smallscreen_overlay--icons'>
+                    <ShoppingCartOutlinedIcon />
+                    <p className='overlay__close' onClick={() => setToggleMenu(false)}><CloseIcon color='#fff'className='x'/></p>
+                  </div>
+                  
       
                   <ul className='app__navbar-smallscreen-links'>
-                    <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>
-                    <li className='p__opensans'><a href='#about'>Market</a></li>
-                    <li className='p__opensans'><a href='#menu'>Trade</a></li>
-                    <li className='p__opensans'><a href='#contact'>Earn</a></li>
-                    <li className='p__opensans'><a href='#more'>More</a></li>
+                    <li className='link__items'><a href='#home'>Account</a><ExpandMoreIcon /></li>
+                    <div />
+                    <li className='link__items'><a href='#about'>Store</a><ExpandMoreIcon /></li>
+                    <div />
+                    <li className='link__items'><a href='#about'>Community</a><ExpandMoreIcon /></li>
+                    <div />
+                    <li className='link__items'><a href='#menu'>News</a><ExpandMoreIcon /></li>
+                    <div />
+                    <li className='link__items'><a href='#contact'>Support</a><ExpandMoreIcon /></li>
+                    <div />
                   </ul>
       
                   <div className='app__navbar-mobileLinks-two'>
-                    <button className='app__navbar-links-two-login' id='mobileLogin'><a href='#login' className=''> Login </a></button>
+                    <button className='app__navbar-links-two-login custom__button' id='mobileLogin'><a href='#login'> Login </a></button>
                     <div />
-                    <button className='app__navbar-links-two-signup'><a href='#signup' className=''>Sign Up</a></button>
+                    <button className='app__navbar-links-two-signup'><a href='#signup'> Sign Up</a></button>
                   </div>
                 </div>
               )}

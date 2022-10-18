@@ -1,5 +1,7 @@
 import React from 'react';
 
+import SendIcon from '@mui/icons-material/Send'
+
 import './Newsletter.css';
 
 const Newsletter = () => (
@@ -10,7 +12,7 @@ const Newsletter = () => (
         <p className='newsletter__description'>Get timely updates for your favorite products</p>
         <div className='newsletter__input'>
           <input type="text" placeholder='Your Email' />
-          <button>Send</button>
+          <button><SendIcon /></button>
         </div>
       </div>
     </div>

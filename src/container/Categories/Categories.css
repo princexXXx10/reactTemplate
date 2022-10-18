@@ -6,22 +6,23 @@
 }
 
 .categories__content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem .5rem;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 @media screen and (max-width: 1150px) {
     .categories__wrapper {
         padding: 1rem 2rem;
     }
+    .categories__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 689px) {
     .categories__content {
-        flex-direction: column;
-        flex-wrap: nowrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
 }

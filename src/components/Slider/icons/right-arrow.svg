@@ -1,39 +1,10 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
-<path id="XMLID_222_" d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001
-	c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213
-	C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606
-	C255,161.018,253.42,157.202,250.606,154.389z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 64.797 45 c 0 0.586 -0.205 1.173 -0.616 1.644 L 50.92 61.839 c -0.908 1.041 -2.487 1.148 -3.527 0.24 c -1.04 -0.909 -1.146 -2.489 -0.24 -3.527 L 58.979 45 L 47.152 31.447 c -0.907 -1.04 -0.799 -2.62 0.24 -3.527 c 1.04 -0.907 2.619 -0.8 3.527 0.24 l 13.261 15.196 C 64.592 43.827 64.797 44.414 64.797 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 64.797 45 c 0 1.381 -1.119 2.5 -2.5 2.5 H 27.704 c -1.381 0 -2.5 -1.119 -2.5 -2.5 s 1.119 -2.5 2.5 -2.5 h 34.593 C 63.678 42.5 64.797 43.619 64.797 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 90 45 c 0 24.813 -20.187 45 -45 45 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 C 69.813 0 90 20.187 90 45 z M 5 45 c 0 22.056 17.944 40 40 40 c 22.056 0 40 -17.944 40 -40 C 85 22.944 67.056 5 45 5 C 22.944 5 5 22.944 5 45 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
 </g>
 </svg>

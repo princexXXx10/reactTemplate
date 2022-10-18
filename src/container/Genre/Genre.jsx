@@ -9,9 +9,11 @@ const Genre = () => {
     <div className='genreItem__container'>
         <div className='genreItem__wrapper'>
             <div className='genreItem__content'>
+              <div className='genreItem__content--main'>
                 {genreItem.map(item => (
                   <GenreItem item={item} key={item.id} />
-                ))}
+                  ))}
+              </div>
             </div>
         </div>
     </div>

@@ -4,9 +4,20 @@
 }
 
 .genreItem__content {
-    padding: 0 5rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.genreItem__content--main {
+    display: flex;
     align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 689px) {
+    .genreItem__content--main {
+        gap: 1rem;
+    }
 }

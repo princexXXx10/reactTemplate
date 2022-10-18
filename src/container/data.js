@@ -1,7 +1,7 @@
 export const categories = [
     {
         id: 1,
-        img: "https://wallpaperaccess.com/full/1657059.jpg",
+        img: "https://images5.alphacoders.com/126/1268094.jpg",
         title: "GAMES",
     },
     {
@@ -162,8 +162,8 @@ export const games = [
     },
     {
         id: 17,
-        img: "https://cdn.arstechnica.net/wp-content/uploads/2022/05/multiversus-listing-800x583.png",
-        title: "Multiversus",
+        img: "https://wallpapercave.com/wp/wp9740995.jpg",
+        title: "Marvel's Midnight Suns",
         price: "N32000",
         console: "Xbox Series X, PS5, PC",
     },
