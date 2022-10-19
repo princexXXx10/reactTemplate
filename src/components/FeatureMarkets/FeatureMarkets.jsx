@@ -1,86 +1,399 @@
-import React from 'react';
+import React from "react";
 
-import './FeatureMarkets.css';
+import { images } from "../../constants";
+import "./FeatureMarkets.css";
 
 const FeatureMarkets = () => {
   return (
-    <div className='featureMarkets__container'>
-        <div className='featureMarkets__wrapper'>
-            <div className='featureMarkets__content'>
+    <div className="featureMarkets__container">
+      <div className="featureMarkets__wrapper">
+        <div className="featureMarkets__content">
+          <section
+            className="section market"
+            aria-label="market update"
+            data-section
+          >
+            <div className="container">
+              <div className="title-wrapper">
+                <h2 className="h2 section-title">Hot Cryptocurrencies</h2>
 
-                <div className='featureMarkets__options'>
-                    <h2 className='featureMarkets__hot'>Hot Cryptocurrencies</h2>
-                    <p className='featureMarkets__more'>More Market</p>
-                </div>
+                <a href="#" className="btn-link">
+                  More Market
+                </a>
+              </div>
 
-                <div className='featureMarkets__market'>
-                    <div className='featureMarkets__market-one'>
+              <div className="market-tab">
+                <table className="market-table">
+                  <thead className="table-head">
+                    <tr className="table-row table-title">
+                      <th className="table-heading"></th>
 
-                        <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title'>Coin</div>
-                            <div className='featureMarkets__market-coin'><span>BTC</span> Bitcoin</div>
-                            <div className='featureMarkets__market-coin'><span>ETH</span> Ethereum</div>
-                            <div className='featureMarkets__market-coin'><span>KOI</span> Koin</div>
-                            <div className='featureMarkets__market-coin'><span>LTC</span> Litecoin</div>
-                            <div className='featureMarkets__market-coin'><span>SOL</span> Solana</div>
+                      <th className="table-heading" scope="col"></th>
+
+                      <th className="table-heading" scope="col">
+                        Name
+                      </th>
+
+                      <th className="table-heading" scope="col">
+                        Last Price
+                      </th>
+
+                      <th className="table-heading" scope="col">
+                        24h Change
+                      </th>
+
+                      <th className="table-heading" scope="col">
+                        Chart
+                      </th>
+
+                      <th className="table-heading">Trade</th>
+                    </tr>
+                  </thead>
+
+                  <tbody className="table-body">
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Bitcoin logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Bitcoin <span className="span">BTC</span>
+                            </a>
+                          </h3>
                         </div>
+                      </td>
 
-                    </div>
-                    <div className='featureMarkets__market-one'>
+                      <td className="table-data last-price">$56,623.54</td>
 
-                        <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title'>Last Price</div>
-                            <div className='featureMarkets__market-price'>1</div>
-                            <div className='featureMarkets__market-price'>2</div>
-                            <div className='featureMarkets__market-price'>3</div>
-                            <div className='featureMarkets__market-price'>4</div>
-                            <div className='featureMarkets__market-price'>5</div>
+                      <td className="table-data last-update green">+1.45%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Ethereum logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Ethereum <span className="span">ETH</span>
+                            </a>
+                          </h3>
                         </div>
+                      </td>
 
-                    </div>
-                    <div className='featureMarkets__market-one'>
+                      <td className="table-data last-price">$56,623.54</td>
 
-                        <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title'>24h Change</div>
-                            <div className='featureMarkets__market-change'>6</div>
-                            <div className='featureMarkets__market-change'>6</div>
-                            <div className='featureMarkets__market-change'>6</div>
-                            <div className='featureMarkets__market-change'>7</div>
-                            <div className='featureMarkets__market-change'>8</div>
+                      <td className="table-data last-update red">-5.12%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="loss chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Tether logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Koiyn <span className="span">KOI</span>
+                            </a>
+                          </h3>
                         </div>
+                      </td>
 
-                    </div>
-                    <div className='featureMarkets__market-one'>
+                      <td className="table-data last-price">$56,623.54</td>
 
-                        <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title' id='mobileView__title'>Chart</div>
-                            <div className='chart'>a</div>
-                            <div className='chart'>a</div>
-                            <div className='chart'>a</div>
-                            <div className='chart'>a</div>
-                            <div className='chart'>a</div>
+                      <td className="table-data last-update green">+1.45%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="BNB logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              BNB <span className="span">BNB/USD</span>
+                            </a>
+                          </h3>
                         </div>
+                      </td>
 
-                    </div>
-                    <div className='featureMarkets__market-one'>
+                      <td className="table-data last-price">$56,623.54</td>
 
-                        <div className='featureMarkets__market-data'>
-                            <div className='featureMarkets__market-title' id='mobileView__title'>Trade</div>
-                            <div className='buy__button'><button>Buy</button></div>
-                            <div className='buy__button'><button>Buy</button></div>
-                            <div className='buy__button'><button>Buy</button></div>
-                            <div className='buy__button'><button>Buy</button></div>
-                            <div className='buy__button'><button>Buy</button></div>
+                      <td className="table-data last-update red">-3.75%%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="loss chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Solana logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Solana <span className="span">SOL</span>
+                            </a>
+                          </h3>
                         </div>
-                        
-                    </div>
-                </div>
+                      </td>
 
+                      <td className="table-data last-price">$56,623.54</td>
 
+                      <td className="table-data last-update green">+1.45%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="XRP logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              XRP <span className="span">XRP</span>
+                            </a>
+                          </h3>
+                        </div>
+                      </td>
+
+                      <td className="table-data last-price">$56,623.54</td>
+
+                      <td className="table-data last-update red">-2.22%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="loss chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Cardano logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Cardano <span className="span">ADA</span>
+                            </a>
+                          </h3>
+                        </div>
+                      </td>
+
+                      <td className="table-data last-price">$56,623.54</td>
+
+                      <td className="table-data last-update green">+0.8%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+
+                    <tr className="table-row">
+                      <td className="table-data"></td>
+
+                      <th className="table-data rank" scope="row">
+                        <img
+                          src={images.Arrow}
+                          width="20"
+                          height="20"
+                          alt="Avalanche logo"
+                          className="img"
+                        />
+                      </th>
+
+                      <td className="table-data">
+                        <div className="wrapper">
+                          <h3>
+                            <a href="#" className="coin-name">
+                              Avalanche <span className="span">AVAX</span>
+                            </a>
+                          </h3>
+                        </div>
+                      </td>
+
+                      <td className="table-data last-price">$56,623.54</td>
+
+                      <td className="table-data last-update green">+1.41%</td>
+
+                      <td className="table-data">
+                        <img
+                          src={images.Arrow}
+                          width="100"
+                          height="40"
+                          alt="profit chart"
+                          className="chart"
+                        />
+                      </td>
+
+                      <td className="table-data">
+                        <button className="btn btn-outline">Trade</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+          </section>
         </div>
+      </div>
     </div>
-  )
-}
-
-export default FeatureMarkets
+  );
+};
+export default FeatureMarkets;

@@ -15,11 +15,11 @@ const Navbar = () => {
         <h1><a href='#home'>Koiyn</a></h1>
       </div>
       <ul className='app__navbar-links-one'>
-        <li className='p__opensans'><a href='#home'>Buy Crypto</a></li>
-        <li className='p__opensans'><a href='#about'>Market</a></li>
-        <li className='p__opensans'><a href='#menu'>Trade</a></li>
-        <li className='p__opensans'><a href='#contact'>Earn</a></li>
-        <li className='p__opensans'><a href='#more'>More</a></li>
+        <li className='link__item'><a href='#home'>Buy Crypto</a></li>
+        <li className='link__item'><a href='#about'>Market</a></li>
+        <li className='link__item'><a href='#menu'>Trade</a></li>
+        <li className='link__item'><a href='#contact'>Earn</a></li>
+        <li className='link__item'><a href='#more'>More</a></li>
       </ul>
       
       <div className='app__navbar-links-two'>
