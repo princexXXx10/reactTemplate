@@ -15,6 +15,10 @@
     font-family: var(--font-base);
 }
 
+.footer__socialIcons {
+    display: flex;
+}
+
 .footer__smallScreen {
     display: none;
 }
