@@ -1,3 +1,11 @@
+# ABOUT [Description]
+
+This repo/branch is a starter for creating react app. Please check branches for all projects.
+
+-- RandomDudeOnNet © copyright 2021 - Present.
+
+HAPPY CODING.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
