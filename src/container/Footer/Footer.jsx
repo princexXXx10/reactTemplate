@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="footer__wrapper custom__wrapper">
       <div className="footer__content">
         <div className="footer__content--main">
-          <p>Omoike Integrated Farm © 2023 - Present</p>
+          <p>Omoike Integrated Farm © 2022 - Present</p>
           <div className="footer__socialIcons">
             <img
               src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"
