@@ -1,3 +1,11 @@
+# ABOUT [Description]
+
+A branch of reactTemplate - Krypto: a landing page for a fictional cryptocurrency wallet and engage app.
+
+-- RandomDudeOnNet © copyright 2021 - Present.
+
+HAPPY CODING.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
