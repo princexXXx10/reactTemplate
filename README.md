@@ -1,6 +1,10 @@
 # ABOUT [Description]
 
-This is a landing page for a cryptocurrency exchange and wallet - Koiyn.
+A branch of reactTemplate - Omoike Integrated Farm: A landing page for a family owned farm.
+
+-- RandomDudeOnNet © copyright 2021 - Present.
+
+HAPPY CODING.
 
 # Getting Started with Create React App
 
