@@ -1,5 +1,9 @@
 import React from "react";
 
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import PhoneIcon from "@mui/icons-material/Phone";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
 import "./Footer.css";
 
 const Footer = () => (
@@ -26,27 +30,18 @@ const Footer = () => (
 
         <div className="footer__smallScreen">
           <div className="footer__address">
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/address.png"
-              alt="Location icon - (Icon8)"
-            />
+            <LocationOnOutlinedIcon />
             <p>
               Homer’s Plaza, Opp. Winners’ Chapel, Uromi-ilushi Road,
               Orhuen-Ubiaja, Edo State.
             </p>
           </div>
           <div className="footer__phone">
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"
-              alt="Phone icon - (Icon8)"
-            />
+            <PhoneIcon />
             <p>+234 9023456789</p>
           </div>
           <div className="footer__email">
-            <img
-              src="https://img.icons8.com/ios-glyphs/30/000000/phone--v1.png"
-              alt="Email icon - (Icon8)"
-            />
+            <MailOutlineIcon />
             <p>omoikefarms@gmail.com</p>
           </div>
 
