@@ -1,6 +1,6 @@
 # ABOUT [Description]
 
-A branch of reactTemplate - Krypto: a landing page for a fictional cryptocurrency wallet and engage app.
+A branch of reactTemplate - Koiyn: a landing page for a fictional cryptocurrency wallet and engage app.
 
 -- RandomDudeOnNet © copyright 2021 - Present.
 
