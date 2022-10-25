@@ -1,6 +1,6 @@
 # ABOUT [Description]
 
-A branch of reactTemplate - Koiyn: landing page for a fictional cryptocurrency wallet and exchange App.
+A branch of reactTemplate - Koiyn: landing page for a fictional cryptocurrency wallet and exchange app.
 
 -- RandomDudeOnNet © copyright 2021 - Present.
 
