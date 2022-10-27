@@ -5,6 +5,7 @@ import Trade from '../assets/Trade.jpg';
 import Arrow from '../assets/Arrow.svg';
 import Playstore from '../assets/Playstore.png';
 import Appstore from '../assets/Appstore.png';
+import Bitcoin from '../assets/Bitcoin.svg';
 
 export default {
   Buy,
@@ -14,4 +15,5 @@ export default {
   Playstore,
   Appstore,
   Phone,
+  Bitcoin
 };

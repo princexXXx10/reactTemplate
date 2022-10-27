@@ -17,7 +17,7 @@ const FeatureMarkets = () => {
               <div className="title-wrapper">
                 <h2 className="h2 section-title">Hot Cryptocurrencies</h2>
 
-                <a href="#" className="btn-link">
+                <a href="#link" className="btn-link">
                   More Market
                 </a>
               </div>
@@ -46,7 +46,7 @@ const FeatureMarkets = () => {
                         Chart
                       </th>
 
-                      <th className="table-heading">Trade</th>
+                      <th className="table-heading">Buy</th>
                     </tr>
                   </thead>
 
@@ -56,7 +56,7 @@ const FeatureMarkets = () => {
 
                       <th className="table-data rank" scope="row">
                         <img
-                          src={images.Arrow}
+                          src={images.Bitcoin}
                           width="20"
                           height="20"
                           alt="Bitcoin logo"
@@ -67,8 +67,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Bitcoin <span className="span">BTC</span>
+                            <a href="#link" className="coin-name">
+                              BTC <span className="span">Bitcoin</span>
                             </a>
                           </h3>
                         </div>
@@ -89,7 +89,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -109,8 +109,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Ethereum <span className="span">ETH</span>
+                            <a href="#link" className="coin-name">
+                              ETH <span className="span">Ethereum</span>
                             </a>
                           </h3>
                         </div>
@@ -131,7 +131,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -151,8 +151,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Koiyn <span className="span">KOI</span>
+                            <a href="#link" className="coin-name">
+                              KOI <span className="span">Koiyn</span>
                             </a>
                           </h3>
                         </div>
@@ -173,49 +173,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Arrow}
-                          width="20"
-                          height="20"
-                          alt="BNB logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#" className="coin-name">
-                              BNB <span className="span">BNB/USD</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$56,623.54</td>
-
-                      <td className="table-data last-update red">-3.75%%</td>
-
-                      <td className="table-data">
-                        <img
-                          src={images.Arrow}
-                          width="100"
-                          height="40"
-                          alt="loss chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -235,8 +193,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Solana <span className="span">SOL</span>
+                            <a href="#link" className="coin-name">
+                              SOL <span className="span">Solana</span>
                             </a>
                           </h3>
                         </div>
@@ -257,7 +215,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -277,8 +235,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              XRP <span className="span">XRP</span>
+                            <a href="#link" className="coin-name">
+                              XRP <span className="span">Ripple</span>
                             </a>
                           </h3>
                         </div>
@@ -299,7 +257,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -319,8 +277,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Cardano <span className="span">ADA</span>
+                            <a href="#link" className="coin-name">
+                              ADA <span className="span">Cardano</span>
                             </a>
                           </h3>
                         </div>
@@ -341,7 +299,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
@@ -361,8 +319,8 @@ const FeatureMarkets = () => {
                       <td className="table-data">
                         <div className="wrapper">
                           <h3>
-                            <a href="#" className="coin-name">
-                              Avalanche <span className="span">AVAX</span>
+                            <a href="#link" className="coin-name">
+                              AVAX <span className="span">Avalanche</span>
                             </a>
                           </h3>
                         </div>
@@ -383,7 +341,7 @@ const FeatureMarkets = () => {
                       </td>
 
                       <td className="table-data">
-                        <button className="btn btn-outline">Trade</button>
+                        <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
                   </tbody>
