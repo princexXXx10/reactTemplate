@@ -6,6 +6,11 @@ import Arrow from '../assets/Arrow.svg';
 import Playstore from '../assets/Playstore.png';
 import Appstore from '../assets/Appstore.png';
 import Bitcoin from '../assets/Bitcoin.svg';
+import Ethereum from '../assets/Ethereum.svg';
+import Cardano from '../assets/Cardano.svg';
+import Ripple from '../assets/Ripple.svg';
+import Solana from '../assets/Solana.svg';
+
 
 export default {
   Buy,
@@ -15,5 +20,9 @@ export default {
   Playstore,
   Appstore,
   Phone,
-  Bitcoin
+  Bitcoin,
+  Ethereum,
+  Solana,
+  Ripple,
+  Cardano
 };

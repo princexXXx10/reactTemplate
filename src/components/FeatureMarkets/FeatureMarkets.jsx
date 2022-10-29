@@ -1,6 +1,8 @@
 import React from "react";
 
 import { images } from "../../constants";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+
 import "./FeatureMarkets.css";
 
 const FeatureMarkets = () => {
@@ -18,7 +20,7 @@ const FeatureMarkets = () => {
                 <h2 className="h2 section-title">Hot Cryptocurrencies</h2>
 
                 <a href="#link" className="btn-link">
-                  More Market
+                  More Market <NavigateNextIcon />
                 </a>
               </div>
 
@@ -26,9 +28,9 @@ const FeatureMarkets = () => {
                 <table className="market-table">
                   <thead className="table-head">
                     <tr className="table-row table-title">
-                      <th className="table-heading"></th>
-
                       <th className="table-heading" scope="col"></th>
+
+                      <th className="table-heading mobile-x" scope="col"></th>
 
                       <th className="table-heading" scope="col">
                         Name
@@ -42,24 +44,24 @@ const FeatureMarkets = () => {
                         24h Change
                       </th>
 
-                      <th className="table-heading" scope="col">
+                      <th className="table-heading mobile-x" scope="col">
                         Chart
                       </th>
 
-                      <th className="table-heading">Buy</th>
+                      <th className="table-heading mobile-x">Buy</th>
                     </tr>
                   </thead>
 
                   <tbody className="table-body">
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
                           src={images.Bitcoin}
                           width="20"
                           height="20"
-                          alt="Bitcoin logo"
+                          alt="Bitcoin Icon by Icon8"
                           className="img"
                         />
                       </th>
@@ -74,11 +76,11 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$56,623.54</td>
+                      <td className="table-data last-price">$45,346.06</td>
 
-                      <td className="table-data last-update green">+1.45%</td>
+                      <td className="table-data last-update green">+3.06%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -88,17 +90,17 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
-                          src={images.Arrow}
+                          src={images.Ethereum}
                           width="20"
                           height="20"
                           alt="Ethereum logo"
@@ -116,11 +118,11 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$56,623.54</td>
+                      <td className="table-data last-price">$1,885.90</td>
 
-                      <td className="table-data last-update red">-5.12%</td>
+                      <td className="table-data last-update red">-0.82%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -130,13 +132,13 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
@@ -158,11 +160,11 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$56,623.54</td>
+                      <td className="table-data last-price">$746.27</td>
 
-                      <td className="table-data last-update green">+1.45%</td>
+                      <td className="table-data last-update green">+2.71%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -172,17 +174,17 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
-                          src={images.Arrow}
+                          src={images.Solana}
                           width="20"
                           height="20"
                           alt="Solana logo"
@@ -200,11 +202,11 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$56,623.54</td>
+                      <td className="table-data last-price">$44.78</td>
 
-                      <td className="table-data last-update green">+1.45%</td>
+                      <td className="table-data last-update green">+0.39%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -214,17 +216,17 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
-                          src={images.Arrow}
+                          src={images.Ripple}
                           width="20"
                           height="20"
                           alt="XRP logo"
@@ -242,11 +244,11 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$56,623.54</td>
+                      <td className="table-data last-price">$346.06</td>
 
-                      <td className="table-data last-update red">-2.22%</td>
+                      <td className="table-data last-update red">-11.42%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -256,17 +258,17 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
 
                     <tr className="table-row">
-                      <td className="table-data"></td>
+                      <td className="table-data mobile-x"></td>
 
                       <th className="table-data rank" scope="row">
                         <img
-                          src={images.Arrow}
+                          src={images.Cardano}
                           width="20"
                           height="20"
                           alt="Cardano logo"
@@ -286,9 +288,9 @@ const FeatureMarkets = () => {
 
                       <td className="table-data last-price">$56,623.54</td>
 
-                      <td className="table-data last-update green">+0.8%</td>
+                      <td className="table-data last-update green">+0.83%</td>
 
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <img
                           src={images.Arrow}
                           width="100"
@@ -298,49 +300,7 @@ const FeatureMarkets = () => {
                         />
                       </td>
 
-                      <td className="table-data">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Arrow}
-                          width="20"
-                          height="20"
-                          alt="Avalanche logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              AVAX <span className="span">Avalanche</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$56,623.54</td>
-
-                      <td className="table-data last-update green">+1.41%</td>
-
-                      <td className="table-data">
-                        <img
-                          src={images.Arrow}
-                          width="100"
-                          height="40"
-                          alt="profit chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data">
+                      <td className="table-data mobile-x">
                         <button className="btn btn-outline">Buy</button>
                       </td>
                     </tr>
