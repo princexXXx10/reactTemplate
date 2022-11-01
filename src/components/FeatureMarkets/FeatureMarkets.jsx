@@ -76,7 +76,7 @@ const FeatureMarkets = () => {
                         </div>
                       </td>
 
-                      <td className="table-data last-price">$45,346.06</td>
+                      <td className="table-data last-price">$45,346.05</td>
 
                       <td className="table-data last-update green">+3.06%</td>
 
