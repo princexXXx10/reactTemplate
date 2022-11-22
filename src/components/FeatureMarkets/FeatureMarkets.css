@@ -1,0 +1,114 @@
+
+  .market .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 4rem;
+  }
+
+  .btn-link {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+  }
+  
+  .market .btn-link {
+    position: relative;
+    min-width: max-content;
+  }
+  
+  .market .btn-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  
+  .market .btn-link:is(:hover, :focus)::after { 
+    background-color: var(--color-primary); 
+  }
+  
+  .market-tab {
+    overflow-x: auto;
+    padding-block-end: 30px;
+  }
+  
+  .market-tab::-webkit-scrollbar { 
+    height: 1px; 
+  }
+  
+  .market-table { width: 100%; }
+  
+  .table-heading,
+  .table-data { padding: 8px; }
+  
+  .table-heading {
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .table-row:not(.table-title) { height: 90px; }
+  
+  .market-table .table-body .table-row:is(:hover, :focus-within) {
+    background-color: #fcfcfc;
+  }
+  
+  .market-table .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: max-content;
+  }
+  
+  .market-table .coin-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .market-table .coin-name .span {
+  }
+  
+  .market-table :is(.rank, .last-price, .market-cap) { 
+    font-weight: .8rem;
+  }
+  
+  .market-table .btn-outline {
+    padding: .2rem .8rem;
+    background: none;
+    outline: none;
+    border: 2px solid;
+  }
+  
+  .market-table .table-row:is(:hover, :focus-within) .btn-outline {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .green {
+    color: green;
+  }
+  .red {
+    color: red;
+  }
+
+  @media screen and (max-width: 689px) {
+    .mobile-x {
+      display: none;
+    }
+    .market-tab {
+      overflow: hidden;
+    }
+    .coin-name, .last-update, .table-heading, .last-price {
+      font-size: .9rem;
+    }
+    .section-title {
+      font-size: 1.3rem;
+    }
+    .btn-link {
+      font-size: .9rem;
+    }
+  }

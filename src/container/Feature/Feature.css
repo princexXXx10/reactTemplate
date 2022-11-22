@@ -1,0 +1,30 @@
+.feature__container {
+    background-color: var(--color-white);
+    font-family: var(--font-base);
+    color: var(--color-black);
+}
+
+.feature__wrapper {
+    max-width: 1300px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+.feature__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .feature__wrapper {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .feature__wrapper {
+        padding: 1rem;
+    }
+}

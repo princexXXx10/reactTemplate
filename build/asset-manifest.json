@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aea91d45.css",
+    "main.js": "/static/js/main.96cf9983.js",
+    "static/media/Phone.png": "/static/media/Phone.0b7e201a1d9065469537.png",
+    "static/media/Buy.jpg": "/static/media/Buy.c356aa41412f84d4da98.jpg",
+    "static/media/Trade.jpg": "/static/media/Trade.6f59864e7c7639a279a0.jpg",
+    "static/media/NFT.jpg": "/static/media/NFT.7ada4c4b1fe43146f361.jpg",
+    "static/media/Playstore.png": "/static/media/Playstore.84c56585e6c46bbdfc56.png",
+    "static/media/Appstore.png": "/static/media/Appstore.6697302345c0d2b3feea.png",
+    "static/media/Cardano.svg": "/static/media/Cardano.ef1b50b093a492edc6d1536db9bf69bf.svg",
+    "static/media/Arrow.svg": "/static/media/Arrow.d3aad89dbbb225c8d8b1207f4ddae2fc.svg",
+    "static/media/Solana.svg": "/static/media/Solana.41dffa7259dea614b2918bd812833a14.svg",
+    "static/media/Bitcoin.svg": "/static/media/Bitcoin.57962351ea2eebcab41af410443b3021.svg",
+    "index.html": "/index.html",
+    "static/media/Ripple.svg": "/static/media/Ripple.437d3758487e165b5e2202114dc1bd12.svg",
+    "static/media/Ethereum.svg": "/static/media/Ethereum.4f34833d981ac013f4bccf865059d9e5.svg",
+    "main.aea91d45.css.map": "/static/css/main.aea91d45.css.map",
+    "main.96cf9983.js.map": "/static/js/main.96cf9983.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aea91d45.css",
+    "static/js/main.96cf9983.js"
+  ]
+}
