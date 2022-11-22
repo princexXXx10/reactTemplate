@@ -68,7 +68,7 @@ const Footer = () => (
           <li>Support Center</li>
           <li>Announcement</li>
           <li>Connect with Koin</li>
-          <li>Success Victor © 2022</li>
+          <li>Success Victor © 2022.</li>
           <div className="mobileView">
             <h1 className="footer__right-mobileTitle">Support</h1>
             <ExpandMoreIcon className="x" />
