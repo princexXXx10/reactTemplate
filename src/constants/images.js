@@ -10,6 +10,13 @@ import Ethereum from '../assets/Ethereum.svg';
 import Cardano from '../assets/Cardano.svg';
 import Ripple from '../assets/Ripple.svg';
 import Solana from '../assets/Solana.svg';
+import BitcoinChart from '../assets/BitcoinChart.svg';
+import EthereumChart from '../assets/EthereumChart.svg';
+import KoiynChart from '../assets/KoiynChart.svg';
+import SolanaChart from '../assets/SolanaChart.svg';
+import RippleChart from '../assets/RippleChart.svg';
+import CardanoChart from '../assets/CardanoChart.svg';
+
 
 
 export default {
@@ -24,5 +31,11 @@ export default {
   Ethereum,
   Solana,
   Ripple,
-  Cardano
+  Cardano,
+  BitcoinChart,
+  EthereumChart,
+  KoiynChart,
+  SolanaChart,
+  RippleChart,
+  CardanoChart
 };

@@ -82,7 +82,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.BitcoinChart}
                           width="100"
                           height="40"
                           alt="profit chart"
@@ -124,7 +124,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.EthereumChart}
                           width="100"
                           height="40"
                           alt="loss chart"
@@ -166,7 +166,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.KoiynChart}
                           width="100"
                           height="40"
                           alt="profit chart"
@@ -208,7 +208,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.SolanaChart}
                           width="100"
                           height="40"
                           alt="profit chart"
@@ -250,7 +250,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.RippleChart}
                           width="100"
                           height="40"
                           alt="loss chart"
@@ -292,7 +292,7 @@ const FeatureMarkets = () => {
 
                       <td className="table-data mobile-x">
                         <img
-                          src={images.Arrow}
+                          src={images.CardanoChart}
                           width="100"
                           height="40"
                           alt="profit chart"
