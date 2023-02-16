@@ -1,22 +1,22 @@
 .custom__button {
-    background-color: var(--color-primary);
-    color: #094b47;
-    font-family: var(--font-base);
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 28px;
-    font-size: 16px;
-    padding: 0.5rem 1.5rem;
-    border-radius: 2rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  background-color: var(--color-primary);
+  color: #094b47;
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .custom__button:hover {
-    background-color: #66FCF1;
+  background-color: #66fcf1;
 }
 
 input {
-    font-family: var(--font-base);
+  font-family: var(--font-base);
 }
