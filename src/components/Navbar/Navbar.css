@@ -92,7 +92,7 @@
     background: var(--color-black);
     transition: 0.5s ease-in-out;
     flex-direction: column;
-    z-index: 5;
+    z-index: 100;
     gap: 5rem;
 }
 

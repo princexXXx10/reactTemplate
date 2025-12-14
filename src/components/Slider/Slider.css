@@ -5,7 +5,7 @@
 }
 
 .container-slider {
-  height: 70vh;
+  height: 80vh;
   margin-top: .5rem;
   position: relative;
   overflow: hidden;
@@ -98,19 +98,19 @@
 
 @media screen and (max-width: 1600px){
   .container-slider {
-    height: 70vh;
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 1024px){
   .container-slider {
-    height: 50vh;
+    height: 60vh;
   }
 }
 
 @media screen and (max-width: 768px){
   .container-slider {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
@@ -120,7 +120,7 @@
     padding: 0 .7rem;
   }
   .container-slider {
-    height: 30vh;
+    height: 40vh;
   }
   .prev,
   .next {

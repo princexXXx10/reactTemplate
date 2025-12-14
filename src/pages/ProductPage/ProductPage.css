@@ -1,0 +1,239 @@
+.product-page {
+  padding: 4rem 2rem;
+  min-height: 80vh;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-base);
+}
+
+.product-page__loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.product-page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.product-page__image-wrapper {
+  width: 100%;
+  height: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-page__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-page__image:hover {
+  transform: scale(1.05);
+}
+
+.product-page__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-page__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--color-black);
+  line-height: 1.2;
+}
+
+.product-page__console {
+  font-size: 1rem;
+  color: var(--color-gray);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-page__rating {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.product-page__reviews {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.product-page__price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-black);
+  font-family: var(--font-alt);
+  margin-bottom: 2rem;
+}
+
+.product-page__description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-gray);
+  margin-bottom: 2.5rem;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 1rem;
+}
+
+.product-page__actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-page__btn {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.product-page__back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-black);
+  margin-bottom: 2rem;
+  font-family: var(--font-base);
+  transition: transform 0.2s ease;
+}
+
+.product-page__back-btn:hover {
+  transform: translateX(-5px);
+  color: var(--color-primary);
+}
+
+.product-page__actions {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-page__btn--primary {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+}
+
+.product-page__btn--primary:hover {
+  background-color: var(--color-primary);
+  filter: brightness(0.9);
+  color: var(--color-black);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-page__btn--secondary {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 2px solid var(--color-primary);
+}
+
+.product-page__btn--secondary:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.product-page__meta {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.product-page__meta p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .product-page__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .product-page__image-wrapper {
+    height: 350px;
+  }
+
+  .product-page__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .product-page {
+    padding: 1rem;
+  }
+  
+  .product-page__actions {
+    flex-direction: column;
+  }
+  
+  .product-page__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.product-page__similar {
+  max-width: 1200px;
+  margin: 4rem auto 0;
+}
+
+.product-page__similar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+}
+
+.product-page__similar-list {
+  display: flex; /* Changed from grid to flex for better control if items are few, or keep grid. Grid is fine. */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Ensure similar products have a nice hover lift if not already in ProductItem */
+.product-page__similar-list > * {
+  transition: transform 0.3s ease;
+}
+
+.product-page__similar-list > *:hover {
+  transform: translateY(-10px);
+}

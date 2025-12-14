@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -23,14 +24,16 @@ const Navbar = () => {
               <p><SearchIcon/></p>
             </div>
 
-            <h1 className='navbar__logo'>Eclipse Games</h1>
+            <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <h1 className='navbar__logo'>Eclipse Games</h1>
+            </Link>
 
             <div className='navbar__links'>
-              <p className='navbar__links--register'><a href='#login' > Register </a></p>
+              <p className='navbar__links--register'><Link to="/auth" state={{ mode: 'register' }}> Register </Link></p>
               <div />
-              <p className='navbar__links--signIn'><a href='#signup' >Sign In</a></p>
+              <p className='navbar__links--signIn'><Link to="/auth" state={{ mode: 'login' }}>Sign In</Link></p>
               <div />
-              <a href="#cart"><ShoppingCartOutlinedIcon className='x'/></a>
+              <Link to="/cart"><ShoppingCartOutlinedIcon className='x'/></Link>
             </div>
 
 
@@ -62,9 +65,9 @@ const Navbar = () => {
                   </ul>
       
                   <div className='app__navbar-mobileLinks-two'>
-                    <button className='app__navbar-links-two-login custom__button' id='mobileLogin'><a href='#login'> Login </a></button>
+                    <button className='app__navbar-links-two-login custom__button' id='mobileLogin'><Link to="/auth" state={{ mode: 'login' }}> Login </Link></button>
                     <div />
-                    <button className='app__navbar-links-two-signup'><a href='#signup'> Sign Up</a></button>
+                    <button className='app__navbar-links-two-signup'><Link to="/auth" state={{ mode: 'register' }}> Sign Up</Link></button>
                   </div>
                 </div>
               )}
