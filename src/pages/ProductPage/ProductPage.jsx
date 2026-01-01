@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { games } from '../../container/data';
 import sliderData from '../../components/Slider/sliderData';
 import ProductItem from '../../components/ProductItem/ProductItem'; // Re-use ProductItem for similar products
