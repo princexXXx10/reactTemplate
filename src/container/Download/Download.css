@@ -1,13 +1,15 @@
 .download__container {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: transparent;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 2;
+    color: #1a1a1a;
     font-family: var(--font-base);
 }
 
 .download__wrapper {
-    max-width: 1400px;
-    margin: auto;
-    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .download__content {

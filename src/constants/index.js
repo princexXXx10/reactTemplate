@@ -1,3 +1,4 @@
 import images from './images';
+import marketData from './data';
 
-export { images };
+export { images, marketData };

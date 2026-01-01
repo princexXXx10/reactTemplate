@@ -3,8 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-black);
+  background: #000000;
   padding: 1rem 2rem;
+  z-index: 10; /* Ensure it stays on top */
+  position: relative;
 }
 
 .app__navbar-logo {
@@ -51,9 +53,10 @@
   align-items: center;
 }
 
-.app__navbar-links-two button {
+.app__navbar-links-two a {
   margin: 0 1rem;
   text-decoration: none;
+  display: inline-block; /* Ensure padding/margin works */
 }
 
 .app__navbar-links-two-login {
@@ -135,7 +138,7 @@
 
 @media screen and (max-width: 2000px) {
     .app__navbar-logo h1 {
-        
+        font-size: 2rem;
     }
 }
 

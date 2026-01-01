@@ -1,309 +1,161 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { images } from "../../constants";
+import { fetchMarketData } from "../../api/market";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import "./FeatureMarkets.css";
 
+// Mini Sparkline Chart Component
+const MiniChart = ({ sparklineData, isPositive }) => {
+  if (!sparklineData || sparklineData.length === 0) {
+    return <img src={images.BitcoinChart} width="100" height="40" alt="chart" className="chart" />;
+  }
+
+  const width = 100;
+  const height = 40;
+  const padding = 2;
+
+  // Find min and max for scaling
+  const values = sparklineData.filter(v => v !== null);
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+
+  // Create SVG path
+  const points = values.map((value, index) => {
+    const x = (index / (values.length - 1)) * (width - padding * 2) + padding;
+    const y = height - padding - ((value - min) / range) * (height - padding * 2);
+    return `${x},${y}`;
+  });
+
+  const pathData = `M ${points.join(' L ')}`;
+  const color = isPositive ? '#10B981' : '#EF4444';
+
+  return (
+    <svg width={width} height={height} className="chart sparkline-chart">
+      <path
+        d={pathData}
+        fill="none"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 const FeatureMarkets = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const apiData = await fetchMarketData();
+      if (apiData && apiData.length > 0) {
+        const mappedData = apiData.slice(0, 6).map((coin) => {
+           return {
+             id: coin.id,
+             name: coin.name,
+             symbol: coin.symbol.toUpperCase(),
+             image: coin.image, 
+             price: `$${coin.current_price.toLocaleString()}`,
+             change: `${coin.price_change_percentage_24h.toFixed(2)}%`,
+             status: coin.price_change_percentage_24h >= 0 ? 'up' : 'down',
+             sparkline: coin.sparkline_in_7d?.price || [],
+           };
+        });
+        setData(mappedData);
+      }
+    };
+    
+    // Initial fetch
+    getData();
+    
+    // Refresh every 60 seconds
+    const interval = setInterval(getData, 60000);
+    
+    // Cleanup on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="featureMarkets__container">
       <div className="featureMarkets__wrapper">
-        <div className="featureMarkets__content">
-          <section
-            className="section market"
-            aria-label="market update"
-            data-section
-          >
-            <div className="container">
-              <div className="title-wrapper">
-                <h2 className="h2 section-title">Hot Cryptocurrencies</h2>
+        <section
+          className="section market"
+          aria-label="market update"
+          data-section
+        >
+          <div className="container">
+            <div className="title-wrapper">
+              <h2 className="h2 section-title">Hot Cryptocurrencies</h2>
 
-                <a href="#link" className="btn-link">
-                  More Market <NavigateNextIcon />
-                </a>
-              </div>
+              <a href="/market" className="btn-link">
+                More Market <NavigateNextIcon />
+              </a>
+            </div>
 
-              <div className="market-tab">
-                <table className="market-table">
-                  <thead className="table-head">
-                    <tr className="table-row table-title">
-                      <th className="table-heading" scope="col"></th>
-
-                      <th className="table-heading mobile-x" scope="col"></th>
-
-                      <th className="table-heading" scope="col">
-                        Name
-                      </th>
-
-                      <th className="table-heading" scope="col">
-                        Last Price
-                      </th>
-
-                      <th className="table-heading" scope="col">
-                        24h Change
-                      </th>
-
-                      <th className="table-heading mobile-x" scope="col">
-                        Chart
-                      </th>
-
-                      <th className="table-heading mobile-x">Buy</th>
-                    </tr>
-                  </thead>
+            <div className="market-tab">
+              <table className="market-table">
+                <thead className="table-head">
+                  <tr className="table-row table-title">
+                    <th className="table-heading" scope="col"></th>
+                    <th className="table-heading mobile-x" scope="col"></th>
+                    <th className="table-heading" scope="col">Name</th>
+                    <th className="table-heading" scope="col">Last Price</th>
+                    <th className="table-heading" scope="col">24h Change</th>
+                    <th className="table-heading mobile-x" scope="col">Chart</th>
+                    <th className="table-heading mobile-x">Buy</th>
+                  </tr>
+                </thead>
 
                   <tbody className="table-body">
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
+                    {data.length === 0 ? (
+                      <tr className="table-row"><td colSpan="7" style={{textAlign: "center"}}>Loading live data...</td></tr>
+                    ) : (
+                      data.map((coin, index) => (
+                        <tr className="table-row" key={coin.id} style={{ '--i': index }}>
+                          <td className="table-data mobile-x"></td>
 
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Bitcoin}
-                          width="20"
-                          height="20"
-                          alt="Bitcoin Icon by Icon8"
-                          className="img"
-                        />
-                      </th>
+                          <th className="table-data rank" scope="row">
+                            <img
+                              src={coin.image}
+                              width="20"
+                              height="20"
+                              alt={`${coin.name} logo`}
+                              className="img"
+                            />
+                          </th>
 
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              BTC <span className="span">Bitcoin</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
+                        <td className="table-data">
+                          <div className="wrapper">
+                            <h3>
+                              <a href="#link" className="coin-name">
+                                {coin.symbol} <span className="span">{coin.name}</span>
+                              </a>
+                            </h3>
+                          </div>
+                        </td>
 
-                      <td className="table-data last-price">$45,346.05</td>
+                        <td className="table-data last-price">{coin.price}</td>
 
-                      <td className="table-data last-update green">+3.06%</td>
+                        <td className={`table-data last-update ${coin.status === 'up' ? 'green' : 'red'}`}>
+                          {coin.change}
+                        </td>
 
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.BitcoinChart}
-                          width="100"
-                          height="40"
-                          alt="profit chart"
-                          className="chart"
-                        />
-                      </td>
+                        <td className="table-data mobile-x">
+                          <MiniChart 
+                            sparklineData={coin.sparkline} 
+                            isPositive={coin.status === 'up'} 
+                          />
+                        </td>
 
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Ethereum}
-                          width="20"
-                          height="20"
-                          alt="Ethereum logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              ETH <span className="span">Ethereum</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$1,885.90</td>
-
-                      <td className="table-data last-update red">-0.82%</td>
-
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.EthereumChart}
-                          width="100"
-                          height="40"
-                          alt="loss chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Arrow}
-                          width="20"
-                          height="20"
-                          alt="Tether logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              KOI <span className="span">Koiyn</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$746.27</td>
-
-                      <td className="table-data last-update green">+2.71%</td>
-
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.KoiynChart}
-                          width="100"
-                          height="40"
-                          alt="profit chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Solana}
-                          width="20"
-                          height="20"
-                          alt="Solana logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              SOL <span className="span">Solana</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$44.78</td>
-
-                      <td className="table-data last-update green">+0.39%</td>
-
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.SolanaChart}
-                          width="100"
-                          height="40"
-                          alt="profit chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Ripple}
-                          width="20"
-                          height="20"
-                          alt="XRP logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              XRP <span className="span">Ripple</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$346.06</td>
-
-                      <td className="table-data last-update red">-11.42%</td>
-
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.RippleChart}
-                          width="100"
-                          height="40"
-                          alt="loss chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
-
-                    <tr className="table-row">
-                      <td className="table-data mobile-x"></td>
-
-                      <th className="table-data rank" scope="row">
-                        <img
-                          src={images.Cardano}
-                          width="20"
-                          height="20"
-                          alt="Cardano logo"
-                          className="img"
-                        />
-                      </th>
-
-                      <td className="table-data">
-                        <div className="wrapper">
-                          <h3>
-                            <a href="#link" className="coin-name">
-                              ADA <span className="span">Cardano</span>
-                            </a>
-                          </h3>
-                        </div>
-                      </td>
-
-                      <td className="table-data last-price">$56,623.54</td>
-
-                      <td className="table-data last-update green">+0.83%</td>
-
-                      <td className="table-data mobile-x">
-                        <img
-                          src={images.CardanoChart}
-                          width="100"
-                          height="40"
-                          alt="profit chart"
-                          className="chart"
-                        />
-                      </td>
-
-                      <td className="table-data mobile-x">
-                        <button className="btn btn-outline">Buy</button>
-                      </td>
-                    </tr>
+                        <td className="table-data mobile-x">
+                          <button className="btn btn-outline">Buy</button>
+                        </td>
+                      </tr>
+                    )))}
                   </tbody>
                 </table>
               </div>
@@ -311,7 +163,7 @@ const FeatureMarkets = () => {
           </section>
         </div>
       </div>
-    </div>
+    
   );
 };
 export default FeatureMarkets;

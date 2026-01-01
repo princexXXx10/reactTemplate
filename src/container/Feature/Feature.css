@@ -1,13 +1,13 @@
 .feature__container {
-    background-color: var(--color-white);
+    background-color: transparent; /* Let grid show through */
     font-family: var(--font-base);
     color: var(--color-black);
 }
 
 .feature__wrapper {
-    max-width: 1300px;
-    margin: auto;
-    padding: 3rem 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .feature__card {

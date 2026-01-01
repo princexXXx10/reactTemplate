@@ -19,7 +19,7 @@ import CardanoChart from '../assets/CardanoChart.svg';
 
 
 
-export default {
+const images = {
   Buy,
   Trade,
   NFT,
@@ -39,3 +39,5 @@ export default {
   RippleChart,
   CardanoChart
 };
+
+export default images;

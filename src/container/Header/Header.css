@@ -1,7 +1,93 @@
 .header__container {
-    background-color: var(--color-black);
+    background-color: #000000;
     font-family: var(--font-base);
     color: var(--color-white);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Starfield Animation - Brighter and faster */
+.header__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(white, rgba(255,255,255,.6) 2px, transparent 4px),
+        radial-gradient(white, rgba(255,255,255,.4) 1px, transparent 3px),
+        radial-gradient(white, rgba(255,255,255,.3) 2px, transparent 4px);
+    background-size: 550px 550px, 350px 350px, 250px 250px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    animation: starMove 50s linear infinite;
+    z-index: -1;
+    opacity: 1; /* Maximum brightness */
+}
+
+@keyframes starMove {
+    from { background-position: 0 0, 40px 60px, 130px 270px; }
+    to { background-position: 550px 550px, 390px 410px, 380px 520px; }
+}
+
+/* Primary Vibrant Glow (Cyan/Blue) */
+.header__container::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(0, 212, 255, 0.3) 0%, transparent 60%);
+    filter: blur(80px);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: floatingGlow 10s ease-in-out infinite alternate;
+}
+
+/* Secondary Vibrant Glow (Purple/Pink) for contrast */
+.header__wrapper::before {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(220, 20, 60, 0.25) 0%, transparent 60%);
+    filter: blur(70px);
+    z-index: 0;
+    animation: floatingGlow2 12s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatingGlow {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
+    100% { transform: translate(-40%, -60%) scale(1.2); opacity: 0.9; }
+}
+
+@keyframes floatingGlow2 {
+    0% { transform: scale(1); opacity: 0.5; }
+    100% { transform: scale(1.3) translate(-30px, 30px); opacity: 0.8; }
+}
+
+/* Ensure wrapper content is above orbs */
+.header__wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: Add a subtle overlay pattern */
+.header__container::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.2;
+    pointer-events: none;
 }
 
 .header__wrapper {
